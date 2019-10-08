@@ -34,7 +34,7 @@ public class User {
     private Date dateRegistered;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Usertrips> Usertrips = new HashSet<>();
+    private Set<Usertrip> Usertrips = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -42,9 +42,13 @@ public class User {
     public User() {
     }
 
-    public Author(String firstName, String lastName) {
+    public User(String firstName, String lastName, String email, String userName, String password, Date dateRegistered) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
+        this.userName = userName;
+        this.password = password;
+        this.dateRegistered = dateRegistered;
     }
 
     /**
@@ -102,40 +106,112 @@ public class User {
     }
 
     /**
-     * Gets books.
+     * Gets email address.
      *
-     * @return the books
+     * @return the email address
      */
-    public Set<Book> getBooks() {
-        return books;
+    public String getEmail() {
+        return email;
     }
 
     /**
-     * Sets books.
+     * Sets email address.
      *
-     * @param books the books
+     * @param email the email address
      */
-    public void setBooks(Set<Book> books) {
-        this.books = books;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     /**
-     * Add a book.
+     * Gets user name.
      *
-     * @param book the book to add
+     * @return the user name
      */
-    public void addBook(Book book) {
-        books.add(book);
-        book.setAuthor(this);
+    public String getUserName() {
+        return userName;
     }
 
     /**
-     * Remove a book.
+     * Sets user name.
      *
-     * @param book the book to remove
+     * @param userName the user name
      */
-    public void removeBook(Book book) {
-        books.remove( book );
-        book.setAuthor( null );
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * Gets date registered.
+     *
+     * @return the date registered
+     */
+    public Date getDateRegistered() {
+        return dateRegistered;
+    }
+
+    /**
+     * Sets date registered.
+     *
+     * @param dateRegistered the date registered
+     */
+    public void setDateRegistered(Date dateRegistered) {
+        this.dateRegistered = dateRegistered;
+    }
+
+    /**
+     * Gets user trips.
+     *
+     * @return the user trips
+     */
+    public Set<Usertrip> getUsertrips() {
+        return Usertrips;
+    }
+
+    /**
+     * Sets user trips.
+     *
+     * @param userTrips the user trips
+     */
+    public void setUsertrips(Set<Usertrip> userTrips) {
+        this.Usertrips = userTrips;
+    }
+
+    /**
+     * Add a user trip.
+     *
+     * @param userTrip the trip to add
+     */
+    public void addTrip(Usertrip userTrip) {
+        Usertrips.add(userTrip);
+        userTrip.setUser(this);
+    }
+
+    /**
+     * Remove a user trip.
+     *
+     * @param userTrip the trip to remove
+     */
+    public void removeTrip(Usertrip userTrip) {
+        Usertrips.remove(userTrip);
+        userTrip.setUser(null);
     }
 }

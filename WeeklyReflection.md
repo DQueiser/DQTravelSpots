@@ -40,3 +40,37 @@ Tasks Completed:
  * Began this weekly reflection document
  * Write out designs for my screens in text form
 
+
+### Week 4
+
+9/25/2019 - 8 hours
+
+Tasks Completed:
+ * Reviewed additional APIs on ProgrammableWeb.com
+ * Updated design document 
+ * Began working on Java Classes
+
+This week I took a deeper dive on my Project Plan and associated design documents. I mapped out in more detail what each Java Class would need, the specifics of the database tables, and each of the JSPs. I began to code the Java Classes, but did not proceed too far; I focused on the weekly exercise which would be helpful when coding my project.
+
+
+### Week 5
+
+10/2/2019 - 6.5 hours
+
+Tasks Completed:
+ * Coded two Java classes
+ * Set up initial MySQL database with three tables 
+ * Coded Hibernate configuration
+
+This week I worked mainly on the second Hibernate exercise; since Hibernate is so important for this project I wanted to be sure I had a good understanding of it before I got too far along on this project. Once I had that exercise completed I began setting up the configuration within my independent project.
+
+
+### Week 6
+
+10/9/2019 - 15 hours
+
+Tasks Completed:
+ * Coded two more Java classes
+ * Tested with my test database 
+
+Things are starting to shape up. The exercise for Week 5 was immensely helpful. I am setting up more classes and hope to begin working on DAOs prior to Wednesday evening.
