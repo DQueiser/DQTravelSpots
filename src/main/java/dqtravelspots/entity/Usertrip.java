@@ -30,6 +30,9 @@ public class Usertrip {
     @ManyToOne
     private User user;
 
+    @OneToMany(mappedBy = "usertrip", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Pointofinterest> Pointsofinterest = new HashSet<>();
+
 
     /**
      * Instantiates a new Usertrip.
@@ -141,6 +144,44 @@ public class Usertrip {
      */
     public void setDateRegistered(Date dateRegistered) {
         this.dateRegistered = dateRegistered;
+    }
+
+    /**
+     * Gets points of interest.
+     *
+     * @return the points of interest
+     */
+    public Set<Pointofinterest> getPointsofinterest() {
+        return Pointsofinterest;
+    }
+
+    /**
+     * Sets points of interest.
+     *
+     * @param pointOfInterest the points of interest
+     */
+    public void setPointsofinterest(Set<Pointofinterest> pointOfInterest) {
+        this.Pointsofinterest = pointOfInterest;
+    }
+
+    /**
+     * Add a point of interest.
+     *
+     * @param pointOfInterest the point of interest to add
+     */
+    public void addPointOfInterest(Pointofinterest pointOfInterest) {
+        Pointsofinterest.add(pointOfInterest);
+        pointOfInterest.setUsertrip(this);
+    }
+
+    /**
+     * Remove a point of interest.
+     *
+     * @param pointOfInterest the trip to remove
+     */
+    public void removeTrip(Pointofinterest pointOfInterest) {
+        Pointsofinterest.remove(pointOfInterest);
+        pointOfInterest.setUsertrip(null);
     }
 
 }
