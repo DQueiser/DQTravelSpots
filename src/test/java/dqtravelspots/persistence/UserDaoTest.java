@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,52 +40,53 @@ public class UserDaoTest {
     }
 
     /**
-     * Verify successful update of an Author
+     * Verify successful update of a User
      */
-    //@Test
-    //void updateSuccess() {
-        //String newLastName = "Bates";
-        //Author authorToUpdate = dao.getById(1);
-        //authorToUpdate.setLastName(newLastName);
-        //dao.saveOrUpdate(authorToUpdate);
-        //Author authorAfterUpdate = dao.getById(1);
-        //assertEquals(newLastName, authorAfterUpdate.getLastName());
-    //}
+    @Test
+    void updateSuccess() {
+        String newFirstName = "Artemis";
+        User userToUpdate = dao.getById(1);
+        userToUpdate.setFirstName(newFirstName);
+        dao.saveOrUpdate(userToUpdate);
+        User userAfterUpdate = dao.getById(1);
+        assertEquals(newFirstName, userAfterUpdate.getFirstName());
+    }
 
     /**
      * Verify successful insert of an Author
      */
-    //@Test
-    //void insertSuccess() {
-        //Author newAuthor = new Author("James", "Blaylock");
-        //int id = dao.insert(newAuthor);
-        //assertNotEquals(0, id);
-        //Author insertedAuthor = dao.getById(id);
-        //assertNotNull(insertedAuthor);
-        //assertEquals("Blaylock", insertedAuthor.getLastName());
-        // Could continue comparing all values, but
-        // it may make sense to use .equals()
-
+    @Test
+    void insertSuccess() {
+        Date today = new Date();
+        User newUser = new User("Artemis", "Jimmers", "ajimmers@gmail.com", "ajimmers", "supersecret2", today);
+        int id = dao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getById(id);
+        assertNotNull(insertedUser);
+        assertEquals("Jimmers", insertedUser.getLastName());
+        //Could continue comparing all values, but
+        //it may make sense to use .equals()
     }
+
     /**
      * Verify successful insert of an author and a book
      */
     //@Test
     //void insertWithBookSuccess() {
-        //String newAuthorLast = "Blaylock";
-        //String newAuthorFirst = "James";
-        //String bookTitle = "The Last Coin";
-        //String bookIsbn = "9789-112-1969";
-        //int bookPubYear = 1988;
-        //Author newAuthor = new Author(newAuthorFirst, newAuthorLast);
-        //Book book = new Book(bookTitle,newAuthor,bookIsbn,bookPubYear);
-        //newAuthor.addBook(book);
-        //int id = dao.insert(newAuthor);
-        //assertNotEquals(0, id);
-        //Author insertedAuthor = dao.getById(id);
-        //assertNotNull(insertedAuthor);
-        //assertEquals("James", insertedAuthor.getFirstName());
-        //assertEquals(1, insertedAuthor.getBooks().size());
+    //String newAuthorLast = "Blaylock";
+    //String newAuthorFirst = "James";
+    //String bookTitle = "The Last Coin";
+    //String bookIsbn = "9789-112-1969";
+    //int bookPubYear = 1988;
+    //Author newAuthor = new Author(newAuthorFirst, newAuthorLast);
+    //Book book = new Book(bookTitle,newAuthor,bookIsbn,bookPubYear);
+    //newAuthor.addBook(book);
+    //int id = dao.insert(newAuthor);
+    //assertNotEquals(0, id);
+    //Author insertedAuthor = dao.getById(id);
+    //assertNotNull(insertedAuthor);
+    //assertEquals("James", insertedAuthor.getFirstName());
+    //assertEquals(1, insertedAuthor.getBooks().size());
 
     //}
 
@@ -93,8 +95,8 @@ public class UserDaoTest {
      */
     //@Test
     //void deleteSuccess() {
-        //dao.delete(dao.getById(2));
-        //assertNull(dao.getById(2));
+    //dao.delete(dao.getById(2));
+    //assertNull(dao.getById(2));
     //}
 
     /**
@@ -102,8 +104,8 @@ public class UserDaoTest {
      */
     //@Test
     //void getAllSuccess() {
-        //List<Author> Authors = dao.getAll();
-        //assertEquals(3, Authors.size());
+    //List<Author> Authors = dao.getAll();
+    //assertEquals(3, Authors.size());
     //}
 
     /**
@@ -111,9 +113,9 @@ public class UserDaoTest {
      */
     //@Test
     //void getByPropertyEqualSuccess() {
-        //List<Author> authors = dao.getByPropertyEqual("firstName", "Kathy");
-        //assertEquals(1, authors.size());
-        //assertEquals(1, authors.get(0).getId());
+    //List<Author> authors = dao.getByPropertyEqual("firstName", "Kathy");
+    //assertEquals(1, authors.size());
+    //assertEquals(1, authors.get(0).getId());
     //}
 
     /**
@@ -121,9 +123,10 @@ public class UserDaoTest {
      */
     //@Test
     //void getByPropertyLikeSuccess() {
-        //List<Author> authors = dao.getByPropertyLike("lastName", "S");
-        //assertEquals(2, authors.size());
+    //List<Author> authors = dao.getByPropertyLike("lastName", "S");
+    //assertEquals(2, authors.size());
     //}
-
-
 }
+
+
+

@@ -3,12 +3,13 @@ package dqtravelspots.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * The type Pointofinterest.
  */
 @Entity(name = "Pointofinterest")
-@Table(name = "pointofinteresr")
+@Table(name = "pointofinterest")
 public class Pointofinterest {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
@@ -34,7 +35,7 @@ public class Pointofinterest {
     private Date dateRegistered;
 
     @ManyToOne
-    private Usertrip usertrip;
+    private Usertrip usertrips;
 
 
     /**
@@ -53,8 +54,8 @@ public class Pointofinterest {
      * @param url
      * @param dateRegistered
      */
-    public Usertrip(Usertrip userTrip, String cityLocation, String title, String description, String comment, String url, Date dateRegistered) {
-        this.usertrip = userTrip;
+    public Pointofinterest(Usertrip userTrip, String cityLocation, String title, String description, String comment, String url, Date dateRegistered) {
+        this.usertrips = userTrip;
         this.cityLocation = cityLocation;
         this.title = title;
         this.description = description;
@@ -69,7 +70,7 @@ public class Pointofinterest {
      * @return the usertrip
      */
     public Usertrip getUsertrip() {
-        return usertrip;
+        return usertrips;
     }
 
     /**
@@ -78,7 +79,7 @@ public class Pointofinterest {
      * @param userTrip the user
      */
     public void setUsertrip(Usertrip userTrip) {
-        this.usertrip = userTrip;
+        this.usertrips = userTrip;
     }
 
     /**

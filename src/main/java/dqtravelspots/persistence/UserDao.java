@@ -28,12 +28,12 @@ public class UserDao {
         Session session = sessionFactory.openSession();
         User user = session.get( User.class, id );
         session.close();
-        return User;
+        return user;
     }
 
     /**
      * update User
-     * @param User  User to be inserted or updated
+     * @param user  User to be inserted or updated
      */
     public void saveOrUpdate(User user) {
         logger.info("Updating a user");

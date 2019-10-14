@@ -3,6 +3,9 @@ package dqtravelspots.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * The type Usertrip.
@@ -30,7 +33,7 @@ public class Usertrip {
     @ManyToOne
     private User user;
 
-    @OneToMany(mappedBy = "usertrip", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "usertrips", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Pointofinterest> Pointsofinterest = new HashSet<>();
 
 
