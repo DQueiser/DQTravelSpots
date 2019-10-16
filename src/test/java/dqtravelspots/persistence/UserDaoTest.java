@@ -69,63 +69,67 @@ public class UserDaoTest {
     }
 
     /**
-     * Verify successful insert of an author and a book
+     * Verify successful insert of a user and a trip
      */
-    //@Test
-    //void insertWithBookSuccess() {
-    //String newAuthorLast = "Blaylock";
-    //String newAuthorFirst = "James";
-    //String bookTitle = "The Last Coin";
-    //String bookIsbn = "9789-112-1969";
-    //int bookPubYear = 1988;
-    //Author newAuthor = new Author(newAuthorFirst, newAuthorLast);
-    //Book book = new Book(bookTitle,newAuthor,bookIsbn,bookPubYear);
-    //newAuthor.addBook(book);
-    //int id = dao.insert(newAuthor);
-    //assertNotEquals(0, id);
-    //Author insertedAuthor = dao.getById(id);
-    //assertNotNull(insertedAuthor);
-    //assertEquals("James", insertedAuthor.getFirstName());
-    //assertEquals(1, insertedAuthor.getBooks().size());
+    @Test
+    void insertWithTripSuccess() {
+        String newUserFirst = "Dave";
+        String newUserLast = "Bowman";
+        String newUserEmail = "dbowman@yahoo.com";
+        String newUserUname = "dbowman1";
+        String newUserPassword = "Supersecret2!";
+        String tripCityLoc = "MILWWI";
+        String tripRating = "5";
+        String tripComment = "Definitely worth a second look";
+        Date today = new Date();
+        User newUser = new User(newUserFirst, newUserLast, newUserEmail, newUserUname, newUserPassword, today);
+        Usertrip newUserTrip = new Usertrip(newUser, tripCityLoc, tripRating, tripComment, today);
+        newUser.addTrip(newUserTrip);
+        int id = dao.insert(newUser);
+        assertNotEquals(0, id);
+        User insertedUser = dao.getById(id);
+        assertNotNull(insertedUser);
+        assertEquals("dbowman1", insertedUser.getUserName());
+        assertEquals(1, insertedUser.getUsertrips().size());
 
-    //}
+    }
 
     /**
      * Verify successful delete of Author
      */
-    //@Test
-    //void deleteSuccess() {
-    //dao.delete(dao.getById(2));
-    //assertNull(dao.getById(2));
-    //}
+    @Test
+    void deleteSuccess() {
+        dao.delete(dao.getById(2));
+        assertNull(dao.getById(2));
+    }
 
     /**
-     * Verify successful retrieval of all Authors
+     * Verify successful retrieval of all Users
      */
-    //@Test
-    //void getAllSuccess() {
-    //List<Author> Authors = dao.getAll();
-    //assertEquals(3, Authors.size());
-    //}
+    @Test
+    void getAllSuccess() {
+        List<User> Users = dao.getAll();
+        assertEquals(2, Users.size());
+    }
 
     /**
      * Verify successful get by property (equal match)
      */
-    //@Test
-    //void getByPropertyEqualSuccess() {
-    //List<Author> authors = dao.getByPropertyEqual("firstName", "Kathy");
-    //assertEquals(1, authors.size());
-    //assertEquals(1, authors.get(0).getId());
-    //}
+    @Test
+    void getByPropertyEqualSuccess() {
+        List<User> users = dao.getByPropertyEqual("firstName", "Mark");
+        assertEquals(1, users.size());
+        assertEquals(2, users.get(0).getId());
+    }
 
     /**
      * Verify successful get by property (like match)
      */
-    //@Test
-    //void getByPropertyLikeSuccess() {
-    //List<Author> authors = dao.getByPropertyLike("lastName", "S");
-    //assertEquals(2, authors.size());
-    //}
+    @Test
+    void getByPropertyLikeSuccess() {
+        List<User> users = dao.getByPropertyLike("lastName", "Q");
+        assertEquals(1, users.size());
+    }
 }
 
 
