@@ -60,6 +60,24 @@ public class Usertrip {
     }
 
     /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
      * Gets user.
      *
      * @return the user

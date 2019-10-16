@@ -1,5 +1,6 @@
 package dqtravelspots.persistence;
 
+import dqtravelspots.entity.Pointofinterest;
 import dqtravelspots.entity.User;
 import dqtravelspots.entity.Usertrip;
 import dqtravelspots.testUtils.Database;
@@ -51,83 +52,90 @@ public class UsertripDaoTest {
     }
 
     /**
-     * Verify successful insert of an Author
+     * Verify successful insert of a Usertrip
      */
-    //@Test
-    //void insertSuccess() {
-        //Date today = new Date();
-        //User newUser = new User("Artemis", "Jimmers", "ajimmers@gmail.com", "ajimmers", "supersecret2", today);
-        //int id = dao.insert(newUser);
-        //assertNotEquals(0, id);
-        //User insertedUser = dao.getById(id);
-        //assertNotNull(insertedUser);
-        //assertEquals("Jimmers", insertedUser.getLastName());
-        //Could continue comparing all values, but
-        //it may make sense to use .equals()
-    //}
+    @Test
+    void insertSuccess() {
+        UserDao userDao = new UserDao();
+        User user = userDao.getById(1);
+        String newUTLocation = "ILCHI";
+        String newUTRating = "2";
+        String newUTComment = "Wonderfully awesome, except for that traffic";
+        Date today = new Date();
+        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTRating, newUTComment, today);
+        user.addTrip(newUserTrip);
+        int id = dao.insert(newUserTrip);
+        assertNotEquals(0, id);
+        Usertrip insertedUserTrip = dao.getById(id);
+        assertNotNull(insertedUserTrip);
+        assertEquals(newUTLocation, insertedUserTrip.getCityLocation());
+        assertNotNull(insertedUserTrip.getUser());
+        assertEquals("Dave", insertedUserTrip.getUser().getFirstName());
+    }
 
     /**
-     * Verify successful insert of a user and a trip
+     * Verify successful insert of a usertrip and a pointofinterest
      */
-    //@Test
-    //void insertWithTripSuccess() {
-        //String newUserFirst = "Dave";
-        //String newUserLast = "Bowman";
-        //String newUserEmail = "dbowman@yahoo.com";
-        //String newUserUname = "dbowman1";
-        //String newUserPassword = "Supersecret2!";
-        //String tripCityLoc = "MILWWI";
-        //String tripRating = "5";
-        //String tripComment = "Definitely worth a second look";
-        //Date today = new Date();
-        //User newUser = new User(newUserFirst, newUserLast, newUserEmail, newUserUname, newUserPassword, today);
-        //Usertrip newUserTrip = new Usertrip(newUser, tripCityLoc, tripRating, tripComment, today);
-        //newUser.addTrip(newUserTrip);
-        //int id = dao.insert(newUser);
-        //assertNotEquals(0, id);
-        //User insertedUser = dao.getById(id);
-        //assertNotNull(insertedUser);
-        //assertEquals("dbowman1", insertedUser.getUserName());
-        //assertEquals(1, insertedUser.getUsertrips().size());
+    @Test
+    void insertWithPOISuccess() {
+        UserDao userDao = new UserDao();
+        User user = userDao.getById(2);
+        String newUTLocation = "CapeHatNC";
+        String newUTRating = "9";
+        String newUTComment = "Lighthouses! Seafood! Fly a kite!!";
+        String newPOITitle = "Wright Brothers Memorial";
+        String newPOIDescription = "A blast of historic fun.";
+        String newPOIComment = "7";
+        String newPOIUrl = "www.imadethisup.edu";
+        Date today = new Date();
+        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTRating, newUTComment, today);
+        Pointofinterest pointOfInterest = new Pointofinterest(newUserTrip,newUTLocation,newPOITitle,newPOIDescription, newPOIComment, newPOIUrl, today);
+        newUserTrip.addPointOfInterest(pointOfInterest);
+        int id = dao.insert(newUserTrip);
+        assertNotEquals(0, id);
+        Usertrip insertedUserTrip = dao.getById(id);
+        assertNotNull(insertedUserTrip);
+        assertEquals(newUTLocation, insertedUserTrip.getCityLocation());
+        assertEquals(1, insertedUserTrip.getPointsofinterest().size());
 
-    //}
-
-    /**
-     * Verify successful delete of Author
-     */
-    //@Test
-    //void deleteSuccess() {
-        //dao.delete(dao.getById(2));
-        //assertNull(dao.getById(2));
-    //}
+    }
 
     /**
-     * Verify successful retrieval of all Users
+     * Verify successful delete of a usertrip
      */
-    //@Test
-    //void getAllSuccess() {
-        //List<User> Users = dao.getAll();
-        //assertEquals(2, Users.size());
-    //}
+    @Test
+    void deleteSuccess() {
+        dao.delete(dao.getById(1));
+        assertNull(dao.getById(1));
+    }
+
+    /**
+     * Verify successful retrieval of all Usertrips
+     */
+    @Test
+    void getAllSuccess() {
+        List<Usertrip> Usertrips = dao.getAll();
+        assertEquals(1, Usertrips.size());
+    }
 
     /**
      * Verify successful get by property (equal match)
      */
-    //@Test
-    //void getByPropertyEqualSuccess() {
-        //List<User> users = dao.getByPropertyEqual("firstName", "Mark");
-        //assertEquals(1, users.size());
-        //assertEquals(2, users.get(0).getId());
-    //}
+    @Test
+    void getByPropertyEqualSuccess() {
+        List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
+        assertEquals(1, userTrips.size());
+        assertEquals(1, userTrips.get(0).getId());
+    }
 
     /**
      * Verify successful get by property (like match)
      */
-    //@Test
-    //void getByPropertyLikeSuccess() {
-        //List<User> users = dao.getByPropertyLike("lastName", "Q");
-        //assertEquals(1, users.size());
-    //}
+    @Test
+    void getByPropertyLikeSuccess() {
+        List<Usertrip> userTrips = dao.getByPropertyLike("rating", "3");
+        assertEquals(1, userTrips.size());
+    }
 }
 
 
