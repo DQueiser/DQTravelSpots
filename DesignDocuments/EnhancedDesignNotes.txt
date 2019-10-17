@@ -1,0 +1,110 @@
+Tables
+~~~~~~
+
+User
+ - ID
+ - First Name
+ - Last Name
+ - Email address
+ - Username
+ - Password
+ - Date registered
+
+UserTrips
+ - ID
+ - User ID (connects to User table)
+ - CityLocationCode
+ - Rating
+ - Comment
+ - Date registered
+
+PointOfInterest
+ - ID
+ - UserTrips ID (connects to UserTrips table)
+ - CityLocationCode
+ - Title
+ - LinkToImg
+ - Description
+ - User comment
+ - Date registered
+
+***********************************************************
+
+Web pages
+~~~~~~~~~
+
+1) Login
+ - Registered users can enter their email address and password - which need to be verified - 
+	and then log in
+ - Unregistered users can click a button which will allow them to register
+
+2) NewUser
+ - New users will enter their First and last names, email address, and a password (twice)
+
+3) About
+ - This page will show information about this application
+
+4) Search
+ - This page will allow a user to enter or select a city/country/state to search for
+ - Ideally this will connect to an API to populate the dropdown of Country and City
+
+5) Search Results
+ - When a successful search is completed, this page will display the results in a easy-to-read
+	format. For each Point Of Interest, users will have the ability to rate it (with a star
+	line) and save it to their saved trips.
+
+6) User Trip List
+ - Users can link to this page, which will display a list of the city locations they have 
+	saved POIs for. It will also show the number of POIs that they have marked as well
+	as the last time they saved a POI for that location
+
+7) User Trip Breakdown
+ - When a user selects one of their saved trips from #6, that trip will display here with 
+	all of its POIs. This screen will be similar to #5.
+
+Also, I think I would like
+
+8) Main
+ - I think it would be helpful to bring start with a Main page, once a user has logged in.
+ - It can have some generic info, some suggested cities, and links to the various other pages.
+
+9) Add POI?
+ - It might be helpful to allow users to enter their own POI for a city.
+ - This could possibly involve another table, which I would search in conjunction with the API
+
+***********************************************************
+
+Tasks
+~~~~~
+
+0) Update the first draft of the ProjectPlan
+
+1) Create database in MySQL
+2) Draft SQL statements to create four tables, and run them initially to create tables
+3) Create User DAO
+4) Create UserTrips DAO
+5) Create PointOfInterestDAO
+6) Create PointOfInterestComments DAO
+
+Various JSPs can be created and functionality added later
+7) Create CSS and link it to project
+8) Create banner images for various pages
+9) Create Login JSP
+10) Create New User JSP
+11) Create Main JSP
+12) Create About JSP
+13) Create Search JSP
+14) Create Search Results JSP
+15) Create User Trip List JSP
+16) Create User Trip Breakdown JSP
+
+17) Connect Search JSP to Geo API to populate dropdowns
+18) Connect Search JSP to Michelin API to conduct POI search
+
+
+
+
+
+
+
+

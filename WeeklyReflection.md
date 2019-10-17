@@ -74,3 +74,15 @@ Tasks Completed:
  * Tested with my test database 
 
 Things are starting to shape up. The exercise for Week 5 was immensely helpful. I am setting up more classes and hope to begin working on DAOs prior to Wednesday evening.
+
+
+### Week 7
+
+10/16/2019 - 25 hours
+
+Tasks Completed:
+ * Coded three DAOs (not using a generic one at this time)
+ * Coded two TestDAOs and ran them
+ * Tested with my test database 
+
+It was a big success to get the TestDAOs actually running. One setback was that when I created my project, the folders were not marked as Sourve, TestSource, etc. But a quick Google search helped me get that straightened out, and it only took a matter of minutes/clicks and I was able to run my first tests.
