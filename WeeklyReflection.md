@@ -85,4 +85,22 @@ Tasks Completed:
  * Coded two TestDAOs and ran them
  * Tested with my test database 
 
-It was a big success to get the TestDAOs actually running. One setback was that when I created my project, the folders were not marked as Sourve, TestSource, etc. But a quick Google search helped me get that straightened out, and it only took a matter of minutes/clicks and I was able to run my first tests.
+It was a big success to get the TestDAOs actually running. One setback was that when I created my project, the folders were not marked as Source, TestSource, etc. But a quick Google search helped me get that straightened out, and it only took a matter of minutes/clicks and I was able to run my first tests.
+
+### Week 8
+
+10/23/2019 - 20 hours
+
+Tasks Completed:
+ * Authentication added
+
+Short week this week, so I rolled the Authentication from last week into this project.
+
+### Week 9
+
+10/30/2019 - 18 hours
+
+Tasks Completed:
+ * Added a data lookup and display, including a servlet.
+
+For some reason adding a simple data lookup to this project turned into a beat-my-head-against-the-wall expedition. But at the last minute, with some help from Paula, it started to work all over the place. So I quickly deployed it to AWS and ran far away from the laptop so as not to screw it up before class time. And also, our Trunk-or-Treat contribution turned out meh, but my daughter was happy. On to the next hurdle.

@@ -15,13 +15,13 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
  */
 public class SessionFactoryProvider {
 
-    private static SessionFactory sessionFactory;
+    public static SessionFactory sessionFactory;
 
     /**
      * private constructor prevents instantiating this class anywhere else
      */
 
-    private SessionFactoryProvider() {
+    public SessionFactoryProvider() {
 
     }
     /**

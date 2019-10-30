@@ -7,8 +7,12 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/dqtravelspotsdb</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
+        <!--
         <property name="connection.username">root</property>
         <property name="connection.password">guest</property>
+        -->
+        <property name="connection.username">root</property>
+        <property name="connection.password">Guest1921</property>
 
         <property name="hibernate.c3p0.min_size">5</property>
         <property name="hibernate.c3p0.max_size">20</property>
