@@ -109,6 +109,22 @@ public class UsertripDao {
     }
 
     /**
+     * Get usertrip by user_id (exact match)
+     * sample usage: getByPropertyEqual("harrumph", "voter")
+     */
+    public List<Usertrip> getByUserID(int userID) {
+        logger.debug("Retrieving all usertrips for user_id: " + userID);
+        Session session = sessionFactory.openSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<Usertrip> query = builder.createQuery( Usertrip.class );
+        Root<Usertrip> root = query.from( Usertrip.class );
+        query.select(root).where(builder.equal(root.get("user"), userID));
+        List<Usertrip> userTrips = session.createQuery( query ).getResultList();
+        session.close();
+        return userTrips;
+    }
+
+    /**
      * Get usertrip by property (like)
      * sample usage: getByPropertyLike("last_name", "S")
      */

@@ -7,10 +7,13 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/dqtravelspotsdb</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
+        <!-- This one is for localhost -->
         <!--
         <property name="connection.username">root</property>
         <property name="connection.password">guest</property>
         -->
+
+        <!-- This one is for AWS -->
         <property name="connection.username">root</property>
         <property name="connection.password">Guest1921</property>
 

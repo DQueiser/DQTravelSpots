@@ -39,9 +39,9 @@ public class SearchUserTrips extends HttpServlet {
 
         logger.debug("DQTEST1: Setting up the DAO");
         //logger.debug("DQTEST2: DAO is set; ");
-        List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
+        //List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
+        List<Usertrip> userTrips = dao.getByUserID(2);
         logger.debug("DQTEST2: Searching for some usertrips and passing to req");
-        //req.setAttribute("userTrips", dao.getByPropertyEqual("cityLocation", "ACIDPLANIT"));
         req.setAttribute("userTrips", userTrips);
 
         //if (searchType.equals("emp_id")) {

@@ -3,6 +3,9 @@
 
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
     <title>Trip Search Results</title>
 </head>
 <body style="background-color: antiquewhite">
@@ -10,7 +13,7 @@
 <div class="container-fluid">
     <h2>Search results</h2>
     <br />
-    <table border="1">
+    <table class="table table-striped table-bordered">
         <tr>
             <th>City</th>
             <th>Rating</th>
