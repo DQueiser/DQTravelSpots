@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class UsertripDaoTest {
 
-    UsertripDao dao;
+    GenericDao dao;
 
     /**
      * Run set up tasks before each test:
@@ -23,7 +23,7 @@ public class UsertripDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new UsertripDao();
+        dao = new GenericDao(Usertrip.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -33,7 +33,7 @@ public class UsertripDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        Usertrip retrievedUsertrip = dao.getById(1);
+        Usertrip retrievedUsertrip = (Usertrip) dao.getById(1);
         assertEquals("ACIDPLANIT", retrievedUsertrip.getCityLocation());
         assertEquals("3", retrievedUsertrip.getRating());
     }
@@ -44,10 +44,10 @@ public class UsertripDaoTest {
     @Test
     void updateSuccess() {
         String newRating = "5";
-        Usertrip usertripToUpdate = dao.getById(1);
+        Usertrip usertripToUpdate = (Usertrip) dao.getById(1);
         usertripToUpdate.setRating(newRating);
         dao.saveOrUpdate(usertripToUpdate);
-        Usertrip usertripAfterUpdate = dao.getById(1);
+        Usertrip usertripAfterUpdate = (Usertrip) dao.getById(1);
         assertEquals(newRating, usertripAfterUpdate.getRating());
     }
 
@@ -66,7 +66,7 @@ public class UsertripDaoTest {
         user.addTrip(newUserTrip);
         int id = dao.insert(newUserTrip);
         assertNotEquals(0, id);
-        Usertrip insertedUserTrip = dao.getById(id);
+        Usertrip insertedUserTrip = (Usertrip) dao.getById(id);
         assertNotNull(insertedUserTrip);
         assertEquals(newUTLocation, insertedUserTrip.getCityLocation());
         assertNotNull(insertedUserTrip.getUser());
@@ -93,7 +93,7 @@ public class UsertripDaoTest {
         newUserTrip.addPointOfInterest(pointOfInterest);
         int id = dao.insert(newUserTrip);
         assertNotEquals(0, id);
-        Usertrip insertedUserTrip = dao.getById(id);
+        Usertrip insertedUserTrip = (Usertrip) dao.getById(id);
         assertNotNull(insertedUserTrip);
         assertEquals(newUTLocation, insertedUserTrip.getCityLocation());
         assertEquals(1, insertedUserTrip.getPointsofinterest().size());
@@ -123,7 +123,7 @@ public class UsertripDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
+        List<Usertrip> userTrips = dao.findByPropertyEqual("cityLocation", "ACIDPLANIT");
         assertEquals(1, userTrips.size());
         assertEquals(1, userTrips.get(0).getId());
     }
@@ -133,7 +133,7 @@ public class UsertripDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Usertrip> userTrips = dao.getByPropertyLike("rating", "3");
+        List<Usertrip> userTrips = dao.findAllByPropertyLike("rating", "3");
         assertEquals(1, userTrips.size());
     }
 }

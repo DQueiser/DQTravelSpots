@@ -14,7 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class PointofinterestDaoTest {
 
-    PointofinterestDao dao;
+    GenericDao dao;
+    //PointofinterestDao dao;
 
     /**
      * Run set up tasks before each test:
@@ -23,55 +24,57 @@ public class PointofinterestDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new PointofinterestDao();
+        dao = new GenericDao(Pointofinterest.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
 
     /**
-     * Verify successful retrieval of a Usertrip
+     * Verify successful retrieval of a Pointofinterest
      */
     @Test
     void getByIdSuccess() {
-        Pointofinterest retrievedPOI = dao.getById(2);
+        Pointofinterest retrievedPOI = (Pointofinterest) dao.getById(2);
         assertEquals("ACIDPLANIT", retrievedPOI.getCityLocation());
         assertEquals("Pathfinder", retrievedPOI.getTitle());
     }
 
     /**
-     * Verify successful update of a Usertrip
+     * Verify successful update of a Pointofinterest
      */
-    //@Test
-    //void updateSuccess() {
-        //String newRating = "5";
-        //Usertrip usertripToUpdate = dao.getById(1);
-        //usertripToUpdate.setRating(newRating);
-        //dao.saveOrUpdate(usertripToUpdate);
-        //Usertrip usertripAfterUpdate = dao.getById(1);
-        //assertEquals(newRating, usertripAfterUpdate.getRating());
-    //}
+    @Test
+    void updateSuccess() {
+        String newURL = "www.whattodoonarainyday.com";
+        Pointofinterest poiToUpdate = (Pointofinterest) dao.getById(1);
+        poiToUpdate.setUrl(newURL);
+        dao.saveOrUpdate(poiToUpdate);
+        Pointofinterest poiAfterUpdate = (Pointofinterest) dao.getById(1);
+        assertEquals(newURL, poiAfterUpdate.getUrl());
+    }
 
     /**
-     * Verify successful insert of a Usertrip
+     * Verify successful insert of a Pointofinterest
      */
-    //@Test
-    //void insertSuccess() {
-        //UserDao userDao = new UserDao();
-        //User user = userDao.getById(1);
-        //String newUTLocation = "ILCHI";
-        //String newUTRating = "2";
-        //String newUTComment = "Wonderfully awesome, except for that traffic";
-        //Date today = new Date();
-        //Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTRating, newUTComment, today);
-        //user.addTrip(newUserTrip);
-        //int id = dao.insert(newUserTrip);
-        //assertNotEquals(0, id);
-        //Usertrip insertedUserTrip = dao.getById(id);
-        //assertNotNull(insertedUserTrip);
-        //assertEquals(newUTLocation, insertedUserTrip.getCityLocation());
+    @Test
+    void insertSuccess() {
+        GenericDao userTripDao = new GenericDao(Usertrip.class);
+        Usertrip userTrip = (Usertrip) userTripDao.getById(1);
+        String newPOICityLocation = "ACIDPLANIT";
+        String newPOITitle = "RTG Spot";
+        String newPOIDescription = "That spot where Commander Lewis buried the big box of plutonium";
+        String newPOIComment = "Is it getting hot in here or is it just me?";
+        String newPOIUrl = "www.themostwonderdultimeoftheyear.com";
+        Date today = new Date();
+        Pointofinterest newPointOfInterest = new Pointofinterest(userTrip, newPOICityLocation, newPOITitle, newPOIDescription, newPOIComment, newPOIUrl, today);
+        //userTrip.addPointOfInterest(newPointOfInterest);
+        int id = dao.insert(newPointOfInterest);
+        assertNotEquals(0, id);
+        Pointofinterest insertedPointOfInterest = (Pointofinterest) dao.getById(id);
+        assertNotNull(insertedPointOfInterest);
+        assertEquals(newPOICityLocation, insertedPointOfInterest.getCityLocation());
         //assertNotNull(insertedUserTrip.getUser());
         //assertEquals("Dave", insertedUserTrip.getUser().getFirstName());
-    //}
+    }
 
     /**
      * Verify successful insert of a usertrip and a pointofinterest

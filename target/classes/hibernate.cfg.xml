@@ -8,14 +8,14 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <!-- This one is for localhost -->
-        <!--
         <property name="connection.username">root</property>
         <property name="connection.password">guest</property>
-        -->
 
         <!-- This one is for AWS -->
+        <!--
         <property name="connection.username">root</property>
         <property name="connection.password">Guest1921</property>
+        -->
 
         <property name="hibernate.c3p0.min_size">5</property>
         <property name="hibernate.c3p0.max_size">20</property>

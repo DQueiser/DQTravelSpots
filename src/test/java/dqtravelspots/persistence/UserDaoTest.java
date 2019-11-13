@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class UserDaoTest {
 
-    UserDao dao;
+    GenericDao dao;
 
     /**
      * Run set up tasks before each test:
@@ -24,7 +24,7 @@ public class UserDaoTest {
      */
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
+        dao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
     }
@@ -34,7 +34,8 @@ public class UserDaoTest {
      */
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User) dao.getById(1);
+        //User retrievedUser = dao.getById(1);
         assertEquals("Dave", retrievedUser.getFirstName());
         assertEquals("Queiser", retrievedUser.getLastName());
     }
@@ -45,10 +46,10 @@ public class UserDaoTest {
     @Test
     void updateSuccess() {
         String newFirstName = "Artemis";
-        User userToUpdate = dao.getById(1);
+        User userToUpdate = (User) dao.getById(1);
         userToUpdate.setFirstName(newFirstName);
         dao.saveOrUpdate(userToUpdate);
-        User userAfterUpdate = dao.getById(1);
+        User userAfterUpdate = (User) dao.getById(1);
         assertEquals(newFirstName, userAfterUpdate.getFirstName());
     }
 
@@ -61,7 +62,7 @@ public class UserDaoTest {
         User newUser = new User("Artemis", "Jimmers", "ajimmers@gmail.com", "ajimmers", "supersecret2", today);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User) dao.getById(id);
         assertNotNull(insertedUser);
         assertEquals("Jimmers", insertedUser.getLastName());
         //Could continue comparing all values, but
@@ -87,7 +88,7 @@ public class UserDaoTest {
         newUser.addTrip(newUserTrip);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User) dao.getById(id);
         assertNotNull(insertedUser);
         assertEquals("dbowman1", insertedUser.getUserName());
         assertEquals(1, insertedUser.getUsertrips().size());
@@ -117,7 +118,7 @@ public class UserDaoTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<User> users = dao.getByPropertyEqual("firstName", "Mark");
+        List<User> users = dao.findByPropertyEqual("firstName", "Mark");
         assertEquals(1, users.size());
         assertEquals(2, users.get(0).getId());
     }
@@ -127,7 +128,7 @@ public class UserDaoTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "Q");
+        List<User> users = dao.findAllByPropertyLike("lastName", "Q");
         assertEquals(1, users.size());
     }
 }

@@ -104,3 +104,22 @@ Tasks Completed:
  * Added a data lookup and display, including a servlet.
 
 For some reason adding a simple data lookup to this project turned into a beat-my-head-against-the-wall expedition. But at the last minute, with some help from Paula, it started to work all over the place. So I quickly deployed it to AWS and ran far away from the laptop so as not to screw it up before class time. And also, our Trunk-or-Treat contribution turned out meh, but my daughter was happy. On to the next hurdle.
+
+### Week 10
+
+11/6/2019 - 2 hours
+
+Tasks Completed:
+ * None
+
+This week was all about getting caught up with Week 9 activities as well as working on the group project. I looked at setting up a generic DAO, but spent no time on it.
+
+### Week 11
+
+11/13/2019 - 16.5 hours
+
+Tasks Completed:
+ * Added a generic DAO and tested.
+
+Much of this week was again spent on the group project - my task was setting up test cases - as well as doing research for my professional presentation. I am learning a lot about AWS Rekognition, although I am not sure if I wil have an app pointing to it by 11/27. There is a sample app on the AWS website which I can use, in any case. This week I added a generic DAO to my independent project and tested with it.  I will be focused on the JSPs over the next week or so.
+ 
