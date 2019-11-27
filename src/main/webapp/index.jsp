@@ -6,12 +6,13 @@
         session.invalidate();
     }
 %>
+
 <html>
 <head>
-    <title>Generic Startup JSP</title>
+    <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
-Hey, man. What's up? </br>
+This is going to be the main screen, protected for users. No links on this page either </br>
 <ul>
     <li><a href="newuser.jsp">I want to add a new user</a></li>
     <li><a href="tripsearch.jsp">I'm a real user and want to do a search</a></li>

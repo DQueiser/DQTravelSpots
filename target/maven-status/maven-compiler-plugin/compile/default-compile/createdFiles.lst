@@ -1,8 +1,10 @@
-dqtravelspots\entity\Pointofinterest.class
 dqtravelspots\entity\Usertrip.class
 dqtravelspots\persistence\UserDao.class
+dqtravelspots\persistence\GenericDao.class
+dqtravelspots\persistence\PointofinterestDao.class
+dqtravelspots\entity\Pointofinterest.class
 dqtravelspots\entity\User.class
 dqtravelspots\persistence\SessionFactoryProvider.class
+dqtravelspots\controller\AddNewUser.class
 dqtravelspots\controller\SearchUserTrips.class
 dqtravelspots\persistence\UsertripDao.class
-dqtravelspots\persistence\PointofinterestDao.class

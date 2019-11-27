@@ -1,8 +1,10 @@
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\AddNewUser.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\User.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\SessionFactoryProvider.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\SearchUserTrips.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\PointofinterestDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\UsertripDao.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\GenericDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\UserDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Pointofinterest.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Usertrip.java

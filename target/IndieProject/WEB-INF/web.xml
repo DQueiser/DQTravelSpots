@@ -16,6 +16,18 @@
     <location>/error403.jsp</location>
   </error-page>
 
+  <!-- Protect the initial page. -->
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>index1</web-resource-name>
+      <url-pattern>/index.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
+    </auth-constraint>
+  </security-constraint>
+
   <!-- Protect the search page. -->
   <security-constraint>
     <web-resource-collection>
@@ -23,28 +35,17 @@
       <url-pattern>/tripsearch.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
-      <role-name>admin</role-name>
-      <role-name>user</role-name>
-    </auth-constraint>
-  </security-constraint>
-
-  <!-- Protect the new user page. -->
-  <security-constraint>
-    <web-resource-collection>
-      <web-resource-name>useradd1</web-resource-name>
-      <url-pattern>/newuser.jsp</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-      <role-name>admin</role-name>
+      <role-name>Admin</role-name>
+      <role-name>User</role-name>
     </auth-constraint>
   </security-constraint>
 
   <security-role>
-    <role-name>admin</role-name>
+    <role-name>Admin</role-name>
   </security-role>
 
   <security-role>
-    <role-name>user</role-name>
+    <role-name>User</role-name>
   </security-role>
 
 </web-app>
