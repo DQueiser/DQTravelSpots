@@ -1,7 +1,9 @@
 package dqtravelspots.controller;
 
+import dqtravelspots.entity.Role;
 import dqtravelspots.entity.User;
 import dqtravelspots.entity.Usertrip;
+import dqtravelspots.persistence.GenericDao;
 import dqtravelspots.persistence.UsertripDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,6 +16,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,14 +31,11 @@ import java.util.List;
 public class AddNewUser extends HttpServlet {
     //@Override
     private final Logger logger = LogManager.getLogger(this.getClass());
-    //UsertripDao dao = new UsertripDao();
+
+    GenericDao dao;
+    GenericDao dao2;
 
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        //String searchTerm = req.getParameter("srchTerm");
-        //String searchType = req.getParameter("srchType");
-        //logger.info("The search term is " + searchTerm);
-        //logger.info("The search type is " + searchType);
 
         Boolean isValid = true;
 
@@ -61,23 +61,21 @@ public class AddNewUser extends HttpServlet {
             JOptionPane.showMessageDialog(parent,"You need to enter a User Name");
             isValid = false;
         }
-        //logger.debug("DQTEST2: DAO is set; ");
-        //List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
-        //List<Usertrip> userTrips = dao.getByUserID(2);
-        //logger.debug("DQTEST2: Searching for some usertrips and passing to req");
-        //req.setAttribute("userTrips", userTrips);
 
-        //if (searchType.equals("emp_id")) {
-            //req.setAttribute("users", userData.getUsersByID(searchTerm));
-        //} else if (searchType.equals("last_name")) {
-            //req.setAttribute("users", userData.getUsersByLast(searchTerm));
-        //} else if (searchType.equals("first_name")) {
-            //req.setAttribute("users", userData.getUsersByFirst(searchTerm));
-        //} else if (searchType.equals("all")) {
-            //req.setAttribute("users", userData.getAllUsers(searchTerm));
-        //}
+        if (!passwordOne.equals(passwordTwo)) {
+            JFrame parent = new JFrame();
+            JOptionPane.showMessageDialog(parent,"The passwords you entered do not match");
+            isValid = false;
+        }
 
         if (isValid ==  true) {
+            Date today = new Date();
+            dao = new GenericDao(User.class);
+            User newUser = new User(firstName, lastName, emailAddress, userName, passwordOne, today);
+            int id = dao.insert(newUser);
+            dao2 = new GenericDao(Role.class);
+            Role newRole = new Role("User",userName,id);
+            int id2 = dao2.insert(newRole);
             RequestDispatcher dispatcher = req.getRequestDispatcher("/login.jsp");
             dispatcher.forward(req, resp);
         } else {

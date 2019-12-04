@@ -122,4 +122,32 @@ Tasks Completed:
  * Added a generic DAO and tested.
 
 Much of this week was again spent on the group project - my task was setting up test cases - as well as doing research for my professional presentation. I am learning a lot about AWS Rekognition, although I am not sure if I wil have an app pointing to it by 11/27. There is a sample app on the AWS website which I can use, in any case. This week I added a generic DAO to my independent project and tested with it.  I will be focused on the JSPs over the next week or so.
+
+### Week 12
+
+11/20/2019 - 0.0 hours
+
+Tasks Completed:
+ * None
+
+This week was devoted to working on the Group Project prior to its demonstration. Class day was my birthday so I am now officially 1/4 of the way through my life span. Class day was spent seeing Ford v Ferrari and hanging out in bookstores, while assisting the group revamp our project.
+
+### Week 13
+
+11/27/2019 - 0.0 hours
+
+Tasks Completed:
+ * None
+
+This week was devoted to prepping for my presentation on AWS Rekognition. Also, we had a full dress rehearsal at the dance studio for our Nutcracker show.
+
+### Week 14
+
+12/4/2019 - 9.0 hours so far
+
+Tasks Completed:
+ * JSPs fleshed out
+ * New user capability has been cleaned up
+
+Preparing for the code review in class tonight. Have all JSPs in place (although not fully constructed). Two weeks to finish this puppy.
  

@@ -1,0 +1,961 @@
+[DEBUG] 2019-12-01 12:13:36.922 [http-nio-8080-exec-1] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2019-12-01 12:13:36.937 [http-nio-8080-exec-1] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2019-12-01 12:13:36.949 [http-nio-8080-exec-1] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2019-12-01 12:13:37.175 [http-nio-8080-exec-1] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2019-12-01 12:13:37.192 [http-nio-8080-exec-1] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2019-12-01 12:13:37.471 [http-nio-8080-exec-1] LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[DEBUG] 2019-12-01 12:13:37.472 [http-nio-8080-exec-1] LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[DEBUG] 2019-12-01 12:13:37.493 [http-nio-8080-exec-1] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2019-12-01 12:13:37.882 [http-nio-8080-exec-1] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2019-12-01 12:13:37.920 [http-nio-8080-exec-1] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2019-12-01 12:13:37.922 [http-nio-8080-exec-1] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2019-12-01 12:13:37.967 [http-nio-8080-exec-1] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2019-12-01 12:13:38.045 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4ec6321b
+[DEBUG] 2019-12-01 12:13:38.045 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4ec6321b
+[DEBUG] 2019-12-01 12:13:38.045 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4ec6321b
+[DEBUG] 2019-12-01 12:13:38.046 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6603fa49
+[DEBUG] 2019-12-01 12:13:38.047 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@5bb705ef
+[DEBUG] 2019-12-01 12:13:38.047 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@72f3471f
+[DEBUG] 2019-12-01 12:13:38.049 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@23f87be5
+[DEBUG] 2019-12-01 12:13:38.049 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@23f87be5
+[DEBUG] 2019-12-01 12:13:38.049 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@23f87be5
+[DEBUG] 2019-12-01 12:13:38.051 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@2995bfcb
+[DEBUG] 2019-12-01 12:13:38.051 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@2995bfcb
+[DEBUG] 2019-12-01 12:13:38.051 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@2995bfcb
+[DEBUG] 2019-12-01 12:13:38.053 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1f08f19
+[DEBUG] 2019-12-01 12:13:38.053 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1f08f19
+[DEBUG] 2019-12-01 12:13:38.053 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1f08f19
+[DEBUG] 2019-12-01 12:13:38.055 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@418d108f
+[DEBUG] 2019-12-01 12:13:38.055 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@418d108f
+[DEBUG] 2019-12-01 12:13:38.055 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@418d108f
+[DEBUG] 2019-12-01 12:13:38.056 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3bd0bb27
+[DEBUG] 2019-12-01 12:13:38.057 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@3bd0bb27
+[DEBUG] 2019-12-01 12:13:38.057 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@3bd0bb27
+[DEBUG] 2019-12-01 12:13:38.058 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@547a3baf
+[DEBUG] 2019-12-01 12:13:38.058 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@547a3baf
+[DEBUG] 2019-12-01 12:13:38.058 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@547a3baf
+[DEBUG] 2019-12-01 12:13:38.060 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@28883643
+[DEBUG] 2019-12-01 12:13:38.060 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@28883643
+[DEBUG] 2019-12-01 12:13:38.060 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@28883643
+[DEBUG] 2019-12-01 12:13:38.062 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@6eaea73b
+[DEBUG] 2019-12-01 12:13:38.062 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@6eaea73b
+[DEBUG] 2019-12-01 12:13:38.063 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@6758fcb9
+[DEBUG] 2019-12-01 12:13:38.064 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@6758fcb9
+[DEBUG] 2019-12-01 12:13:38.065 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@7c161277
+[DEBUG] 2019-12-01 12:13:38.065 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@7c161277
+[DEBUG] 2019-12-01 12:13:38.066 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3ccbcc72
+[DEBUG] 2019-12-01 12:13:38.067 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@78311b26
+[DEBUG] 2019-12-01 12:13:38.069 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@39237a4d
+[DEBUG] 2019-12-01 12:13:38.069 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@39237a4d
+[DEBUG] 2019-12-01 12:13:38.071 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@18995d54
+[DEBUG] 2019-12-01 12:13:38.071 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@18995d54
+[DEBUG] 2019-12-01 12:13:38.078 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7e9d77c9
+[DEBUG] 2019-12-01 12:13:38.078 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7e9d77c9
+[DEBUG] 2019-12-01 12:13:38.080 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@28f638b8
+[DEBUG] 2019-12-01 12:13:38.080 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@28f638b8
+[DEBUG] 2019-12-01 12:13:38.082 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@ce03c19
+[DEBUG] 2019-12-01 12:13:38.082 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@ce03c19
+[DEBUG] 2019-12-01 12:13:38.084 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2b5df2ea
+[DEBUG] 2019-12-01 12:13:38.084 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2b5df2ea
+[DEBUG] 2019-12-01 12:13:38.087 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@58ad3b44
+[DEBUG] 2019-12-01 12:13:38.087 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@58ad3b44
+[DEBUG] 2019-12-01 12:13:38.089 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2d80a1d1
+[DEBUG] 2019-12-01 12:13:38.089 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2d80a1d1
+[DEBUG] 2019-12-01 12:13:38.092 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bb57500
+[DEBUG] 2019-12-01 12:13:38.092 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6bb57500
+[DEBUG] 2019-12-01 12:13:38.095 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6c2c7b0d
+[DEBUG] 2019-12-01 12:13:38.095 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6c2c7b0d
+[DEBUG] 2019-12-01 12:13:38.097 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@68dfb929
+[DEBUG] 2019-12-01 12:13:38.097 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@68dfb929
+[DEBUG] 2019-12-01 12:13:38.099 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@47bcf443
+[DEBUG] 2019-12-01 12:13:38.099 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@47bcf443
+[DEBUG] 2019-12-01 12:13:38.099 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@47bcf443
+[DEBUG] 2019-12-01 12:13:38.101 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@20aa76b6
+[DEBUG] 2019-12-01 12:13:38.103 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@7a231ee
+[DEBUG] 2019-12-01 12:13:38.103 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7a231ee
+[DEBUG] 2019-12-01 12:13:38.103 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7a231ee
+[DEBUG] 2019-12-01 12:13:38.104 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@cddf460
+[DEBUG] 2019-12-01 12:13:38.106 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@26233122
+[DEBUG] 2019-12-01 12:13:38.106 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@26233122
+[DEBUG] 2019-12-01 12:13:38.108 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@45da4481
+[DEBUG] 2019-12-01 12:13:38.108 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@45da4481
+[DEBUG] 2019-12-01 12:13:38.110 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4ce98731
+[DEBUG] 2019-12-01 12:13:38.110 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4ce98731
+[DEBUG] 2019-12-01 12:13:38.112 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@2bd8ce64
+[DEBUG] 2019-12-01 12:13:38.112 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2bd8ce64
+[DEBUG] 2019-12-01 12:13:38.114 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@732e268b
+[DEBUG] 2019-12-01 12:13:38.114 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@732e268b
+[DEBUG] 2019-12-01 12:13:38.115 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1a076fea
+[DEBUG] 2019-12-01 12:13:38.116 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@18427dbe
+[DEBUG] 2019-12-01 12:13:38.117 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@18427dbe
+[DEBUG] 2019-12-01 12:13:38.117 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@18427dbe
+[DEBUG] 2019-12-01 12:13:38.118 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7e66890e
+[DEBUG] 2019-12-01 12:13:38.118 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7e66890e
+[DEBUG] 2019-12-01 12:13:38.119 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7e66890e
+[DEBUG] 2019-12-01 12:13:38.120 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@e4380f6
+[DEBUG] 2019-12-01 12:13:38.121 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@e859925
+[DEBUG] 2019-12-01 12:13:38.123 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@3c6956c6
+[DEBUG] 2019-12-01 12:13:38.123 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@3c6956c6
+[DEBUG] 2019-12-01 12:13:38.123 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@3c6956c6
+[DEBUG] 2019-12-01 12:13:38.125 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2416551e
+[DEBUG] 2019-12-01 12:13:38.125 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2416551e
+[DEBUG] 2019-12-01 12:13:38.125 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2416551e
+[DEBUG] 2019-12-01 12:13:38.125 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@77b878c1
+[DEBUG] 2019-12-01 12:13:38.126 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@43032b97
+[DEBUG] 2019-12-01 12:13:38.129 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@6ba93b4a
+[DEBUG] 2019-12-01 12:13:38.130 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6ba93b4a
+[DEBUG] 2019-12-01 12:13:38.130 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@621d3c06
+[DEBUG] 2019-12-01 12:13:38.133 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@254eb48c
+[DEBUG] 2019-12-01 12:13:38.133 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@254eb48c
+[DEBUG] 2019-12-01 12:13:38.136 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@9cd1c1e
+[DEBUG] 2019-12-01 12:13:38.136 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@9cd1c1e
+[DEBUG] 2019-12-01 12:13:38.136 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5dc09816
+[DEBUG] 2019-12-01 12:13:38.137 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@587f0c08
+[DEBUG] 2019-12-01 12:13:38.140 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@380472fe
+[DEBUG] 2019-12-01 12:13:38.146 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@7bb113bc
+[DEBUG] 2019-12-01 12:13:38.147 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7bb113bc
+[DEBUG] 2019-12-01 12:13:38.147 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@11b9c028
+[DEBUG] 2019-12-01 12:13:38.147 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@959fffc
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@868da91
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5a45ff7c
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@5a2dc9c
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@43c275cb
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@d309370
+[DEBUG] 2019-12-01 12:13:38.148 [http-nio-8080-exec-1] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@787b33b5
+[DEBUG] 2019-12-01 12:13:38.202 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2019-12-01 12:13:38.203 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2019-12-01 12:13:38.205 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-12-01 12:13:38.205 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2019-12-01 12:13:38.206 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2019-12-01 12:13:38.208 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2019-12-01 12:13:38.209 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2019-12-01 12:13:38.212 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-12-01 12:13:38.213 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2019-12-01 12:13:38.214 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2019-12-01 12:13:38.215 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2019-12-01 12:13:38.216 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2019-12-01 12:13:38.216 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2019-12-01 12:13:38.217 [http-nio-8080-exec-1] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2019-12-01 12:13:38.226 [http-nio-8080-exec-1] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/dqtravelspotsdb
+[INFO ] 2019-12-01 12:13:38.226 [http-nio-8080-exec-1] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2019-12-01 12:13:38.227 [http-nio-8080-exec-1] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2019-12-01 12:13:38.401 [http-nio-8080-exec-1] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2019-12-01 12:13:38.725 [http-nio-8080-exec-1] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.17
+      major : 8
+      minor : 0
+[DEBUG] 2019-12-01 12:13:38.725 [http-nio-8080-exec-1] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2019-12-01 12:13:38.725 [http-nio-8080-exec-1] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2019-12-01 12:13:38.785 [http-nio-8080-exec-1] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2019-12-01 12:13:38.828 [http-nio-8080-exec-1] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2019-12-01 12:13:38.866 [http-nio-8080-exec-1] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2019-12-01 12:13:38.912 [http-nio-8080-exec-1] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2019-12-01 12:13:38.918 [http-nio-8080-exec-1] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@69055478] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@61aec07f]
+[DEBUG] 2019-12-01 12:13:39.018 [http-nio-8080-exec-1] AnnotationBinder - Binding entity from annotated class: dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.059 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-01 12:13:39.075 [http-nio-8080-exec-1] EntityBinder - Import with entity name User
+[DEBUG] 2019-12-01 12:13:39.080 [http-nio-8080-exec-1] EntityBinder - Bind entity dqtravelspots.entity.User on table user
+[DEBUG] 2019-12-01 12:13:39.121 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.125 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-01 12:13:39.128 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:id]
+[DEBUG] 2019-12-01 12:13:39.131 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.135 [http-nio-8080-exec-1] PropertyBinder - Building property id
+[DEBUG] 2019-12-01 12:13:39.143 [http-nio-8080-exec-1] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-01 12:13:39.147 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-12-01 12:13:39.147 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=Usertrips, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.149 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.166 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.166 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=Usertrips_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.167 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Usertrips_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-01 12:13:39.169 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-12-01 12:13:39.169 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2019-12-01 12:13:39.169 [http-nio-8080-exec-1] CollectionBinder - Collection role: dqtravelspots.entity.User.Usertrips
+[DEBUG] 2019-12-01 12:13:39.175 [http-nio-8080-exec-1] PropertyBinder - Building property Usertrips
+[DEBUG] 2019-12-01 12:13:39.175 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=date_registered, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.175 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property dateRegistered with lazy=false
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:dateRegistered]
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] PropertyBinder - Building property dateRegistered
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:email]
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] PropertyBinder - Building property email
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:firstName]
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for firstName
+[DEBUG] 2019-12-01 12:13:39.176 [http-nio-8080-exec-1] PropertyBinder - Building property firstName
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:lastName]
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for lastName
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] PropertyBinder - Building property lastName
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property password with lazy=false
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:password]
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for password
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] PropertyBinder - Building property password
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.User:userName]
+[DEBUG] 2019-12-01 12:13:39.177 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-12-01 12:13:39.178 [http-nio-8080-exec-1] PropertyBinder - Building property userName
+[DEBUG] 2019-12-01 12:13:39.179 [http-nio-8080-exec-1] AnnotationBinder - Binding entity from annotated class: dqtravelspots.entity.Role
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] EntityBinder - Import with entity name Role
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] EntityBinder - Bind entity dqtravelspots.entity.Role on table role
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-01 12:13:39.180 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Role:id]
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] PropertyBinder - Building property id
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=role_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Role:roleName]
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] PropertyBinder - Building property roleName
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user_id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property userID with lazy=false
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Role:userID]
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for userID
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] PropertyBinder - Building property userID
+[DEBUG] 2019-12-01 12:13:39.181 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Role:userName]
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] PropertyBinder - Building property userName
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] AnnotationBinder - Binding entity from annotated class: dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] EntityBinder - Import with entity name Usertrip
+[DEBUG] 2019-12-01 12:13:39.182 [http-nio-8080-exec-1] EntityBinder - Bind entity dqtravelspots.entity.Usertrip on table usertrips
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Usertrip:id]
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] PropertyBinder - Building property id
+[DEBUG] 2019-12-01 12:13:39.183 [http-nio-8080-exec-1] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='usertrips'}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=Pointsofinterest, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=Pointsofinterest_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='Pointsofinterest_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='usertrips'}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='usertrips'}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] CollectionBinder - Collection role: dqtravelspots.entity.Usertrip.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] PropertyBinder - Building property Pointsofinterest
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=citylocationcode, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property cityLocation with lazy=false
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Usertrip:cityLocation]
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for cityLocation
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] PropertyBinder - Building property cityLocation
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=comment, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.184 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property comment with lazy=false
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Usertrip:comment]
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for comment
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] PropertyBinder - Building property comment
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=date_registered, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property dateRegistered with lazy=false
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Usertrip:dateRegistered]
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] PropertyBinder - Building property dateRegistered
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=rating, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property rating with lazy=false
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Usertrip:rating]
+[DEBUG] 2019-12-01 12:13:39.185 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for rating
+[DEBUG] 2019-12-01 12:13:39.186 [http-nio-8080-exec-1] PropertyBinder - Building property rating
+[DEBUG] 2019-12-01 12:13:39.186 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-01 12:13:39.186 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(usertrips), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.189 [http-nio-8080-exec-1] PropertyBinder - Building property user
+[DEBUG] 2019-12-01 12:13:39.189 [http-nio-8080-exec-1] AnnotationBinder - Binding entity from annotated class: dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.189 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2019-12-01 12:13:39.189 [http-nio-8080-exec-1] EntityBinder - Import with entity name Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.189 [http-nio-8080-exec-1] EntityBinder - Bind entity dqtravelspots.entity.Pointofinterest on table pointofinterest
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:id]
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] PropertyBinder - Building property id
+[DEBUG] 2019-12-01 12:13:39.190 [http-nio-8080-exec-1] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=citylocationcode, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property cityLocation with lazy=false
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:cityLocation]
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for cityLocation
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - Building property cityLocation
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=comment, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property comment with lazy=false
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:comment]
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for comment
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - Building property comment
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=date_registered, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property dateRegistered with lazy=false
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:dateRegistered]
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] PropertyBinder - Building property dateRegistered
+[DEBUG] 2019-12-01 12:13:39.191 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:description]
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - Building property description
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=title, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property title with lazy=false
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:title]
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for title
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - Building property title
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=url, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - MetadataSourceProcessor property url with lazy=false
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [dqtravelspots.entity.Pointofinterest:url]
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] SimpleValueBinder - building SimpleValue for url
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] PropertyBinder - Building property url
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2019-12-01 12:13:39.192 [http-nio-8080-exec-1] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(pointofinterest), mappingColumn=usertrips, insertable=true, updatable=true, unique=false}
+[DEBUG] 2019-12-01 12:13:39.193 [http-nio-8080-exec-1] PropertyBinder - Building property usertrips
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for firstName
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for lastName
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for password
+[DEBUG] 2019-12-01 12:13:39.195 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for userID
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for cityLocation
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for comment
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for rating
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for cityLocation
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for comment
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for dateRegistered
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for title
+[DEBUG] 2019-12-01 12:13:39.196 [http-nio-8080-exec-1] SimpleValueBinder - Starting fillSimpleValue for url
+[DEBUG] 2019-12-01 12:13:39.204 [http-nio-8080-exec-1] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2019-12-01 12:13:39.204 [http-nio-8080-exec-1] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2019-12-01 12:13:39.204 [http-nio-8080-exec-1] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [usertrips]
+[DEBUG] 2019-12-01 12:13:39.204 [http-nio-8080-exec-1] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [pointofinterest]
+[DEBUG] 2019-12-01 12:13:39.204 [http-nio-8080-exec-1] CollectionSecondPass - Second pass for collection: dqtravelspots.entity.User.Usertrips
+[DEBUG] 2019-12-01 12:13:39.205 [http-nio-8080-exec-1] CollectionBinder - Binding a OneToMany: dqtravelspots.entity.User.Usertrips through a foreign key
+[DEBUG] 2019-12-01 12:13:39.206 [http-nio-8080-exec-1] CollectionBinder - Mapping collection: dqtravelspots.entity.User.Usertrips -> usertrips
+[DEBUG] 2019-12-01 12:13:39.208 [http-nio-8080-exec-1] TableBinder - Retrieving property dqtravelspots.entity.Usertrip.user
+[DEBUG] 2019-12-01 12:13:39.208 [http-nio-8080-exec-1] CollectionSecondPass - Mapped collection key: user_id, one-to-many: dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.208 [http-nio-8080-exec-1] CollectionSecondPass - Second pass for collection: dqtravelspots.entity.Usertrip.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:39.209 [http-nio-8080-exec-1] CollectionBinder - Binding a OneToMany: dqtravelspots.entity.Usertrip.Pointsofinterest through a foreign key
+[DEBUG] 2019-12-01 12:13:39.209 [http-nio-8080-exec-1] CollectionBinder - Mapping collection: dqtravelspots.entity.Usertrip.Pointsofinterest -> pointofinterest
+[DEBUG] 2019-12-01 12:13:39.209 [http-nio-8080-exec-1] TableBinder - Retrieving property dqtravelspots.entity.Pointofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:39.209 [http-nio-8080-exec-1] CollectionSecondPass - Mapped collection key: usertrips_id, one-to-many: dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.209 [http-nio-8080-exec-1] InFlightMetadataCollectorImpl - Resolving reference to class: dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.212 [http-nio-8080-exec-1] InFlightMetadataCollectorImpl - Resolving reference to class: dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.215 [http-nio-8080-exec-1] InFlightMetadataCollectorImpl - Resolving reference to class: dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.215 [http-nio-8080-exec-1] InFlightMetadataCollectorImpl - Resolving reference to class: dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.273 [http-nio-8080-exec-1] SessionFactoryImpl - Building session factory
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - SessionFactory name : null
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Statistics: disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Default entity-mode: pojo
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Default batch fetch size: -1
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Default null ordering: NONE
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2019-12-01 12:13:39.274 [http-nio-8080-exec-1] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JTA Track by Thread: enabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Query language substitutions: {}
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Named query checking : enabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Second-level cache: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Second-level query cache: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Second-level query cache factory: null
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Second-level cache region prefix: null
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JDBC batch size: 15
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Scrollable result sets: enabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Wrap result sets: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JDBC result set fetch size: null
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - Generate SQL with comments: disabled
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JPA compliance - query : 
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JPA compliance - lists : 
+[DEBUG] 2019-12-01 12:13:39.275 [http-nio-8080-exec-1] Settings - JPA compliance - transactions : 
+[INFO ] 2019-12-01 12:13:39.391 [http-nio-8080-exec-1] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2019-12-01 12:13:39.420 [http-nio-8080-exec-1] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2019-12-01 12:13:39.420 [http-nio-8080-exec-1] SessionFactoryImpl - Instantiating session factory with properties: {awt.toolkit=sun.awt.windows.WToolkit, java.specification.version=11, sun.cpu.isalist=amd64, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=Cp1252, hibernate.c3p0.min_size=5, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=true, openejb.provider.default=org.apache.tomee, sun.boot.library.path=C:\Program Files\Java\jdk-11.0.4\bin, com.sun.management.jmxremote.ssl=false, sun.java.command=org.apache.catalina.startup.Bootstrap start, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.naming.factory.url.pkgs=org.apache.naming:org.apache.openejb.core.ivm.naming, openejb.embedder.source=ServerListener, java.version.date=2019-07-16, java.home=C:\Program Files\Java\jdk-11.0.4, ignore.endorsed.dirs=, file.separator=\, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, openejb.scan.webapp.container=true, com.sun.management.jmxremote.password.file=C:\Users\Dave\.IntelliJIdea2019.2\system\tomcat\TomEE_8_5_41_IndieProject\jmxremote.password, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.naming.,org.apache.tomcat., openejb.deployments.classpath.filter.systemapps=false, jdk.tls.ephemeralDHKeySize=2048, user.script=, java.util.logging.config.file=C:\Users\Dave\.IntelliJIdea2019.2\system\tomcat\TomEE_8_5_41_IndieProject\conf\logging.properties, java.protocol.handler.pkgs=org.apache.catalina.webresources, connection.password=guest, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, openejb.scan.webapp.container.excludes=, java.runtime.version=11.0.4+10-LTS, user.name=Dave, org.apache.johnzon.max-string-length=8192, file.encoding=Cp1252, java.vendor.version=18.9, derby.system.home=C:\Java\tomcat\bin, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.io.tmpdir=C:\Java\tomcat\temp, tomcat.util.scan.StandardJarScanFilter.jarsToScan=log4j-taglib*.jar,log4j-web*.jar,log4javascript*.jar,slf4j-taglib*.jar, java.version=11.0.4, com.sun.management.jmxremote.port=1099, tomcat.util.scan.StandardJarScanFilter.jarsToSkip=annotations-api.jar,ant-junit*.jar,ant-launcher.jar,ant.jar,asm-*.jar,aspectj*.jar,bootstrap.jar,catalina-ant.jar,catalina-ha.jar,catalina-jmx-remote.jar,catalina-storeconfig.jar,catalina-tribes.jar,catalina-ws.jar,catalina.jar,cglib-*.jar,cobertura-*.jar,commons-beanutils*.jar,commons-codec*.jar,commons-collections*.jar,commons-daemon.jar,commons-dbcp*.jar,commons-digester*.jar,commons-fileupload*.jar,commons-httpclient*.jar,commons-io*.jar,commons-lang*.jar,commons-logging*.jar,commons-math*.jar,commons-pool*.jar,dom4j-*.jar,easymock-*.jar,ecj-*.jar,el-api.jar,geronimo-spec-jaxrpc*.jar,h2*.jar,hamcrest-*.jar,hibernate*.jar,httpclient*.jar,icu4j-*.jar,jasper-el.jar,jasper.jar,jaspic-api.jar,jaxb-*.jar,jaxen-*.jar,jdom-*.jar,jetty-*.jar,jmx-tools.jar,jmx.jar,jsp-api.jar,jstl.jar,jta*.jar,junit-*.jar,junit.jar,log4j*.jar,mail*.jar,objenesis-*.jar,oraclepki.jar,oro-*.jar,servlet-api-*.jar,servlet-api.jar,slf4j*.jar,taglibs-standard-spec-*.jar,tagsoup-*.jar,tomcat-api.jar,tomcat-coyote.jar,tomcat-dbcp.jar,tomcat-i18n-*.jar,tomcat-jdbc.jar,tomcat-jni.jar,tomcat-juli-adapters.jar,tomcat-juli.jar,tomcat-util-scan.jar,tomcat-util.jar,tomcat-websocket.jar,tools.jar,websocket-api.jar,wsdl4j*.jar,xercesImpl.jar,xml-apis.jar,xmlParserAPIs-*.jar,xmlParserAPIs.jar,xom-*.jar, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, connection.driver_class=com.mysql.cj.jdbc.Driver, tomcat.built=May 4 2019 09:17:16 UTC, java.library.path=C:\Program Files\Java\jdk-11.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files (x86)\PuTTY\;C:\Program Files\Amazon\AWSCLI\bin\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;., java.vendor=Oracle Corporation, tomee.version=7.1.1, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeLittle, tomcat.util.buf.StringCache.byte.enabled=true, sun.desktop=windows, java.class.path=C:\Java\tomcat\bin\bootstrap.jar;C:\Java\tomcat\bin\tomcat-juli.jar, tomcat.version=8.5.41.0, java.vm.vendor=Oracle Corporation, openejb.home=C:\Java\tomcat, user.variant=, openejb.system.apps=true, user.timezone=America/Chicago, os.name=Windows 10, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, openejb.base=C:\Users\Dave\.IntelliJIdea2019.2\system\tomcat\TomEE_8_5_41_IndieProject, com.sun.management.jmxremote=, sun.cpu.endian=little, user.home=C:\Users\Dave, hibernate.c3p0.max_statements=50, user.language=en, openejb.deployments.classpath=false, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.jasper.,org.apache.tomcat., openejb.loader=tomcat-system, server.loader=, com.sun.management.jmxremote.access.file=C:\Users\Dave\.IntelliJIdea2019.2\system\tomcat\TomEE_8_5_41_IndieProject\jmxremote.access, hibernate.c3p0.max_size=20, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, path.separator=;, org.apache.openejb.core.security.JaccProvider=org.apache.openejb.core.security.jacc.BasicJaccProvider, common.loader="C:/Java/tomcat/lib","C:/Java/tomcat/lib/*.jar","C:\Java\tomcat/lib","C:\Java\tomcat/lib/*.jar", hibernate.connection.username=****, os.version=10.0, openejb.version=7.1.1, org.apache.security.jacc.EJBMethodPermission.methodInterfaces=BusinessLocalHome,BusinessRemoteHome,BusinessRemote,BusinessLocal, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/dqtravelspotsdb, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, openejb.scan.webapp.container.includes=.*(geronimo|mp-jwt|failsafe).*, java.vendor.url.bug=http://bugreport.java.com/bugreport/, tomee.remote.support=true, catalina.home=C:\Java\tomcat, user.dir=C:\Java\tomcat\bin, bval.in-container=true, os.arch=amd64, openjpa.Log=org.apache.openejb.openjpa.JULOpenJPALogFactory, hibernate.connection.password=****, tomee.serialization.class.blacklist=-, tomee.serialization.class.whitelist=, shared.loader=, catalina.base=C:\Users\Dave\.IntelliJIdea2019.2\system\tomcat\TomEE_8_5_41_IndieProject, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@360aa224, noBanner=true, java.util.logging.manager=org.apache.juli.ClassLoaderLogManager, org.apache.webbeans.logger.WebBeansLoggerFacade=org.apache.openejb.cdi.logging.ContainerJULLoggerFactory, java.vm.info=mixed mode, java.vm.version=11.0.4+10-LTS, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.hostname=127.0.0.1, javax.security.jacc.PolicyConfigurationFactory.provider=org.apache.openejb.core.security.JaccProvider$Factory, connection.url=jdbc:mysql://localhost:3306/dqtravelspotsdb, java.class.version=55.0, authconfigprovider.factory=false}
+[DEBUG] 2019-12-01 12:13:39.455 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Usertrip] is safe
+[DEBUG] 2019-12-01 12:13:39.456 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.467 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Pointofinterest] is safe
+[DEBUG] 2019-12-01 12:13:39.467 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.468 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.User] is safe
+[DEBUG] 2019-12-01 12:13:39.468 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.469 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Role] is safe
+[DEBUG] 2019-12-01 12:13:39.469 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Role
+[DEBUG] 2019-12-01 12:13:39.473 [http-nio-8080-exec-1] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2019-12-01 12:13:39.473 [http-nio-8080-exec-1] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2019-12-01 12:13:39.473 [http-nio-8080-exec-1] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@69055478] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@3cda0498]
+[DEBUG] 2019-12-01 12:13:39.553 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Usertrip] is safe
+[DEBUG] 2019-12-01 12:13:39.553 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.594 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Usertrip] is safe
+[DEBUG] 2019-12-01 12:13:39.594 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:39.963 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Pointofinterest] is safe
+[DEBUG] 2019-12-01 12:13:39.963 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.963 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Pointofinterest] is safe
+[DEBUG] 2019-12-01 12:13:39.963 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:39.975 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.User] is safe
+[DEBUG] 2019-12-01 12:13:39.975 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.975 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.User] is safe
+[DEBUG] 2019-12-01 12:13:39.975 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:39.988 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Role] is safe
+[DEBUG] 2019-12-01 12:13:39.988 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Role
+[DEBUG] 2019-12-01 12:13:39.988 [http-nio-8080-exec-1] ClassLoaderAccessImpl - Not known whether passed class name [dqtravelspots.entity.Role] is safe
+[DEBUG] 2019-12-01 12:13:39.988 [http-nio-8080-exec-1] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : dqtravelspots.entity.Role
+[DEBUG] 2019-12-01 12:13:40.008 [http-nio-8080-exec-1] AbstractCollectionPersister - Static SQL for collection: dqtravelspots.entity.User.Usertrips
+[DEBUG] 2019-12-01 12:13:40.008 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row insert: update usertrips set user_id=? where id=?
+[DEBUG] 2019-12-01 12:13:40.008 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row update: update usertrips set  where id=?
+[DEBUG] 2019-12-01 12:13:40.008 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row delete: update usertrips set user_id=null where user_id=? and id=?
+[DEBUG] 2019-12-01 12:13:40.008 [http-nio-8080-exec-1] AbstractCollectionPersister -  One-shot delete: update usertrips set user_id=null where user_id=?
+[DEBUG] 2019-12-01 12:13:40.009 [http-nio-8080-exec-1] AbstractCollectionPersister - Static SQL for collection: dqtravelspots.entity.Usertrip.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.009 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row insert: update pointofinterest set usertrips_id=? where id=?
+[DEBUG] 2019-12-01 12:13:40.009 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row update: update pointofinterest set  where id=?
+[DEBUG] 2019-12-01 12:13:40.009 [http-nio-8080-exec-1] AbstractCollectionPersister -  Row delete: update pointofinterest set usertrips_id=null where usertrips_id=? and id=?
+[DEBUG] 2019-12-01 12:13:40.009 [http-nio-8080-exec-1] AbstractCollectionPersister -  One-shot delete: update pointofinterest set usertrips_id=null where usertrips_id=?
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister - Static SQL for entity: dqtravelspots.entity.Usertrip
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Version select: select id from usertrips where id =?
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Snapshot select: select usertrip_.id, usertrip_.citylocationcode as cityloca2_3_, usertrip_.comment as comment3_3_, usertrip_.date_registered as date_reg4_3_, usertrip_.rating as rating5_3_, usertrip_.user_id as user_id6_3_ from usertrips usertrip_ where usertrip_.id=?
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Insert 0: insert into usertrips (citylocationcode, comment, date_registered, rating, user_id, id) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Update 0: update usertrips set citylocationcode=?, comment=?, date_registered=?, rating=?, user_id=? where id=?
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Delete 0: delete from usertrips where id=?
+[DEBUG] 2019-12-01 12:13:40.015 [http-nio-8080-exec-1] AbstractEntityPersister -  Identity insert: insert into usertrips (citylocationcode, comment, date_registered, rating, user_id) values (?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.065 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@71919ccf]
+[DEBUG] 2019-12-01 12:13:40.068 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.078 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@22c7b002]
+[DEBUG] 2019-12-01 12:13:40.083 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e8f0cd6]
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.cityLocation
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.comment
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.description
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.title
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.url
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.085 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : rating
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-12-01 12:13:40.086 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@66f69bf5]
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-12-01 12:13:40.087 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-12-01 12:13:40.088 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2019-12-01 12:13:40.088 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-12-01 12:13:40.088 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.112 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.122 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Usertrip)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Usertrip)
+          - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:1>, path=dqtravelspots.entity.Usertrip.Pointsofinterest)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:2>, path=dqtravelspots.entity.Usertrip.Pointsofinterest.<elements>)
+          - EntityAttributeFetchImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:3>, path=dqtravelspots.entity.Usertrip.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Usertrip)
+          - SQL table alias mapping - usertrip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(Pointsofinterest)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+                - SQL table alias mapping - pointsofin1_
+                - alias suffix - 1_
+                - suffixed key columns - {usertrip8_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.Pointofinterest)
+                      - SQL table alias mapping - pointsofin1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=dqtravelspots.entity.User)
+                - SQL table alias mapping - user2_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2019-12-01 12:13:40.125 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Usertrip [NONE]: select usertrip0_.id as id1_3_0_, usertrip0_.citylocationcode as cityloca2_3_0_, usertrip0_.comment as comment3_3_0_, usertrip0_.date_registered as date_reg4_3_0_, usertrip0_.rating as rating5_3_0_, usertrip0_.user_id as user_id6_3_0_, pointsofin1_.usertrips_id as usertrip8_0_1_, pointsofin1_.id as id1_0_1_, pointsofin1_.id as id1_0_2_, pointsofin1_.citylocationcode as cityloca2_0_2_, pointsofin1_.comment as comment3_0_2_, pointsofin1_.date_registered as date_reg4_0_2_, pointsofin1_.description as descript5_0_2_, pointsofin1_.title as title6_0_2_, pointsofin1_.url as url7_0_2_, pointsofin1_.usertrips_id as usertrip8_0_2_, user2_.id as id1_2_3_, user2_.date_registered as date_reg2_2_3_, user2_.email as email3_2_3_, user2_.first_name as first_na4_2_3_, user2_.last_name as last_nam5_2_3_, user2_.password as password6_2_3_, user2_.user_name as user_nam7_2_3_ from usertrips usertrip0_ left outer join pointofinterest pointsofin1_ on usertrip0_.id=pointsofin1_.usertrips_id left outer join user user2_ on usertrip0_.user_id=user2_.id where usertrip0_.id=?
+[DEBUG] 2019-12-01 12:13:40.125 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@ef75ac6]
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7253c6]
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@39ac43f4]
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.cityLocation
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.comment
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.description
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.title
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.url
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : rating
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48f93b48]
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.firstName
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.lastName
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.password
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user.userName
+[DEBUG] 2019-12-01 12:13:40.126 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.127 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.127 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Usertrip)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Usertrip)
+          - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:1>, path=dqtravelspots.entity.Usertrip.Pointsofinterest)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:2>, path=dqtravelspots.entity.Usertrip.Pointsofinterest.<elements>)
+          - EntityAttributeFetchImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:3>, path=dqtravelspots.entity.Usertrip.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Usertrip)
+          - SQL table alias mapping - usertrip0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(Pointsofinterest)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+                - SQL table alias mapping - pointsofin1_
+                - alias suffix - 1_
+                - suffixed key columns - {usertrip8_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.Pointofinterest)
+                      - SQL table alias mapping - pointsofin1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=dqtravelspots.entity.User)
+                - SQL table alias mapping - user2_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2019-12-01 12:13:40.127 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Usertrip [READ]: select usertrip0_.id as id1_3_0_, usertrip0_.citylocationcode as cityloca2_3_0_, usertrip0_.comment as comment3_3_0_, usertrip0_.date_registered as date_reg4_3_0_, usertrip0_.rating as rating5_3_0_, usertrip0_.user_id as user_id6_3_0_, pointsofin1_.usertrips_id as usertrip8_0_1_, pointsofin1_.id as id1_0_1_, pointsofin1_.id as id1_0_2_, pointsofin1_.citylocationcode as cityloca2_0_2_, pointsofin1_.comment as comment3_0_2_, pointsofin1_.date_registered as date_reg4_0_2_, pointsofin1_.description as descript5_0_2_, pointsofin1_.title as title6_0_2_, pointsofin1_.url as url7_0_2_, pointsofin1_.usertrips_id as usertrip8_0_2_, user2_.id as id1_2_3_, user2_.date_registered as date_reg2_2_3_, user2_.email as email3_2_3_, user2_.first_name as first_na4_2_3_, user2_.last_name as last_nam5_2_3_, user2_.password as password6_2_3_, user2_.user_name as user_nam7_2_3_ from usertrips usertrip0_ left outer join pointofinterest pointsofin1_ on usertrip0_.id=pointsofin1_.usertrips_id left outer join user user2_ on usertrip0_.user_id=user2_.id where usertrip0_.id=?
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] Loader - Static select for action ACTION_MERGE on entity dqtravelspots.entity.Usertrip: select usertrip0_.id as id1_3_1_, usertrip0_.citylocationcode as cityloca2_3_1_, usertrip0_.comment as comment3_3_1_, usertrip0_.date_registered as date_reg4_3_1_, usertrip0_.rating as rating5_3_1_, usertrip0_.user_id as user_id6_3_1_, pointsofin1_.usertrips_id as usertrip8_0_3_, pointsofin1_.id as id1_0_3_, pointsofin1_.id as id1_0_0_, pointsofin1_.citylocationcode as cityloca2_0_0_, pointsofin1_.comment as comment3_0_0_, pointsofin1_.date_registered as date_reg4_0_0_, pointsofin1_.description as descript5_0_0_, pointsofin1_.title as title6_0_0_, pointsofin1_.url as url7_0_0_, pointsofin1_.usertrips_id as usertrip8_0_0_ from usertrips usertrip0_ left outer join pointofinterest pointsofin1_ on usertrip0_.id=pointsofin1_.usertrips_id where usertrip0_.id=?
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] Loader - Static select for action ACTION_REFRESH on entity dqtravelspots.entity.Usertrip: select usertrip0_.id as id1_3_1_, usertrip0_.citylocationcode as cityloca2_3_1_, usertrip0_.comment as comment3_3_1_, usertrip0_.date_registered as date_reg4_3_1_, usertrip0_.rating as rating5_3_1_, usertrip0_.user_id as user_id6_3_1_, pointsofin1_.usertrips_id as usertrip8_0_3_, pointsofin1_.id as id1_0_3_, pointsofin1_.id as id1_0_0_, pointsofin1_.citylocationcode as cityloca2_0_0_, pointsofin1_.comment as comment3_0_0_, pointsofin1_.date_registered as date_reg4_0_0_, pointsofin1_.description as descript5_0_0_, pointsofin1_.title as title6_0_0_, pointsofin1_.url as url7_0_0_, pointsofin1_.usertrips_id as usertrip8_0_0_ from usertrips usertrip0_ left outer join pointofinterest pointsofin1_ on usertrip0_.id=pointsofin1_.usertrips_id where usertrip0_.id=?
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] AbstractEntityPersister - Static SQL for entity: dqtravelspots.entity.Pointofinterest
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] AbstractEntityPersister -  Version select: select id from pointofinterest where id =?
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] AbstractEntityPersister -  Snapshot select: select pointofint_.id, pointofint_.citylocationcode as cityloca2_0_, pointofint_.comment as comment3_0_, pointofint_.date_registered as date_reg4_0_, pointofint_.description as descript5_0_, pointofint_.title as title6_0_, pointofint_.url as url7_0_, pointofint_.usertrips_id as usertrip8_0_ from pointofinterest pointofint_ where pointofint_.id=?
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] AbstractEntityPersister -  Insert 0: insert into pointofinterest (citylocationcode, comment, date_registered, description, title, url, usertrips_id, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.152 [http-nio-8080-exec-1] AbstractEntityPersister -  Update 0: update pointofinterest set citylocationcode=?, comment=?, date_registered=?, description=?, title=?, url=?, usertrips_id=? where id=?
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] AbstractEntityPersister -  Delete 0: delete from pointofinterest where id=?
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] AbstractEntityPersister -  Identity insert: insert into pointofinterest (citylocationcode, comment, date_registered, description, title, url, usertrips_id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@96eb40f]
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : title
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : url
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6fc17102]
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.cityLocation
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.comment
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.rating
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38fd7e99]
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : usertrips.user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.153 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.email
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.firstName
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.lastName
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.password
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.userName
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Pointofinterest)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Pointofinterest)
+          - EntityAttributeFetchImpl(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:1>, path=dqtravelspots.entity.Pointofinterest.usertrips)
+             - EntityAttributeFetchImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:2>, path=dqtravelspots.entity.Pointofinterest.usertrips.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Pointofinterest)
+          - SQL table alias mapping - pointofint0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(usertrips)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dqtravelspots.entity.Usertrip)
+                - SQL table alias mapping - usertrip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Pointofinterest [NONE]: select pointofint0_.id as id1_0_0_, pointofint0_.citylocationcode as cityloca2_0_0_, pointofint0_.comment as comment3_0_0_, pointofint0_.date_registered as date_reg4_0_0_, pointofint0_.description as descript5_0_0_, pointofint0_.title as title6_0_0_, pointofint0_.url as url7_0_0_, pointofint0_.usertrips_id as usertrip8_0_0_, usertrip1_.id as id1_3_1_, usertrip1_.citylocationcode as cityloca2_3_1_, usertrip1_.comment as comment3_3_1_, usertrip1_.date_registered as date_reg4_3_1_, usertrip1_.rating as rating5_3_1_, usertrip1_.user_id as user_id6_3_1_, user2_.id as id1_2_2_, user2_.date_registered as date_reg2_2_2_, user2_.email as email3_2_2_, user2_.first_name as first_na4_2_2_, user2_.last_name as last_nam5_2_2_, user2_.password as password6_2_2_, user2_.user_name as user_nam7_2_2_ from pointofinterest pointofint0_ left outer join usertrips usertrip1_ on pointofint0_.usertrips_id=usertrip1_.id left outer join user user2_ on usertrip1_.user_id=user2_.id where pointofint0_.id=?
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@49669146]
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : title
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : url
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@256a2cac]
+[DEBUG] 2019-12-01 12:13:40.154 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.cityLocation
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.comment
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.rating
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@28a49c90]
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : usertrips.user.Usertrips
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.email
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.firstName
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.lastName
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.password
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips.user.userName
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.155 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Pointofinterest)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Pointofinterest)
+          - EntityAttributeFetchImpl(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:1>, path=dqtravelspots.entity.Pointofinterest.usertrips)
+             - EntityAttributeFetchImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:2>, path=dqtravelspots.entity.Pointofinterest.usertrips.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Pointofinterest)
+          - SQL table alias mapping - pointofint0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(usertrips)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dqtravelspots.entity.Usertrip)
+                - SQL table alias mapping - usertrip1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Pointofinterest [READ]: select pointofint0_.id as id1_0_0_, pointofint0_.citylocationcode as cityloca2_0_0_, pointofint0_.comment as comment3_0_0_, pointofint0_.date_registered as date_reg4_0_0_, pointofint0_.description as descript5_0_0_, pointofint0_.title as title6_0_0_, pointofint0_.url as url7_0_0_, pointofint0_.usertrips_id as usertrip8_0_0_, usertrip1_.id as id1_3_1_, usertrip1_.citylocationcode as cityloca2_3_1_, usertrip1_.comment as comment3_3_1_, usertrip1_.date_registered as date_reg4_3_1_, usertrip1_.rating as rating5_3_1_, usertrip1_.user_id as user_id6_3_1_, user2_.id as id1_2_2_, user2_.date_registered as date_reg2_2_2_, user2_.email as email3_2_2_, user2_.first_name as first_na4_2_2_, user2_.last_name as last_nam5_2_2_, user2_.password as password6_2_2_, user2_.user_name as user_nam7_2_2_ from pointofinterest pointofint0_ left outer join usertrips usertrip1_ on pointofint0_.usertrips_id=usertrip1_.id left outer join user user2_ on usertrip1_.user_id=user2_.id where pointofint0_.id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] Loader - Static select for action ACTION_MERGE on entity dqtravelspots.entity.Pointofinterest: select pointofint0_.id as id1_0_0_, pointofint0_.citylocationcode as cityloca2_0_0_, pointofint0_.comment as comment3_0_0_, pointofint0_.date_registered as date_reg4_0_0_, pointofint0_.description as descript5_0_0_, pointofint0_.title as title6_0_0_, pointofint0_.url as url7_0_0_, pointofint0_.usertrips_id as usertrip8_0_0_ from pointofinterest pointofint0_ where pointofint0_.id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] Loader - Static select for action ACTION_REFRESH on entity dqtravelspots.entity.Pointofinterest: select pointofint0_.id as id1_0_0_, pointofint0_.citylocationcode as cityloca2_0_0_, pointofint0_.comment as comment3_0_0_, pointofint0_.date_registered as date_reg4_0_0_, pointofint0_.description as descript5_0_0_, pointofint0_.title as title6_0_0_, pointofint0_.url as url7_0_0_, pointofint0_.usertrips_id as usertrip8_0_0_ from pointofinterest pointofint0_ where pointofint0_.id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister - Static SQL for entity: dqtravelspots.entity.User
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Snapshot select: select user_.id, user_.date_registered as date_reg2_2_, user_.email as email3_2_, user_.first_name as first_na4_2_, user_.last_name as last_nam5_2_, user_.password as password6_2_, user_.user_name as user_nam7_2_ from user user_ where user_.id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Insert 0: insert into user (date_registered, email, first_name, last_name, password, user_name, id) values (?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Update 0: update user set date_registered=?, email=?, first_name=?, last_name=?, password=?, user_name=? where id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] AbstractEntityPersister -  Identity insert: insert into user (date_registered, email, first_name, last_name, password, user_name) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2ef7ae45]
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@59ab5529]
+[DEBUG] 2019-12-01 12:13:40.156 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64ad232e]
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@19a88a3c]
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@14117e74]
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.cityLocation
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.comment
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.description
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.title
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.url
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Usertrips.Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.cityLocation
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.comment
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.rating
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.user
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Usertrips.user
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.157 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:0>, path=dqtravelspots.entity.User)
+          - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.User.Usertrips, querySpaceUid=<gen:1>, path=dqtravelspots.entity.User.Usertrips)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:2>, path=dqtravelspots.entity.User.Usertrips.<elements>)
+                - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:3>, path=dqtravelspots.entity.User.Usertrips.<elements>.Pointsofinterest)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:4>, path=dqtravelspots.entity.User.Usertrips.<elements>.Pointsofinterest.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(Usertrips)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=dqtravelspots.entity.User.Usertrips)
+                - SQL table alias mapping - usertrips1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.Usertrip)
+                      - SQL table alias mapping - usertrips1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(Pointsofinterest)) : <gen:2> -> <gen:3>
+                         - CollectionQuerySpaceImpl(uid=<gen:3>, collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+                            - SQL table alias mapping - pointsofin2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {usertrip8_0_3_}
+                            - entity-element alias suffix - 4_
+                            - 4_entity-element suffixed key columns - id1_0_4_
+                            - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                               - EntityQuerySpaceImpl(uid=<gen:4>, entity=dqtravelspots.entity.Pointofinterest)
+                                  - SQL table alias mapping - pointsofin2_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {id1_0_4_}
+
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.User [NONE]: select user0_.id as id1_2_0_, user0_.date_registered as date_reg2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.user_name as user_nam7_2_0_, usertrips1_.user_id as user_id6_3_1_, usertrips1_.id as id1_3_1_, usertrips1_.id as id1_3_2_, usertrips1_.citylocationcode as cityloca2_3_2_, usertrips1_.comment as comment3_3_2_, usertrips1_.date_registered as date_reg4_3_2_, usertrips1_.rating as rating5_3_2_, usertrips1_.user_id as user_id6_3_2_, pointsofin2_.usertrips_id as usertrip8_0_3_, pointsofin2_.id as id1_0_3_, pointsofin2_.id as id1_0_4_, pointsofin2_.citylocationcode as cityloca2_0_4_, pointsofin2_.comment as comment3_0_4_, pointsofin2_.date_registered as date_reg4_0_4_, pointsofin2_.description as descript5_0_4_, pointsofin2_.title as title6_0_4_, pointsofin2_.url as url7_0_4_, pointsofin2_.usertrips_id as usertrip8_0_4_ from user user0_ left outer join usertrips usertrips1_ on user0_.id=usertrips1_.user_id left outer join pointofinterest pointsofin2_ on usertrips1_.id=pointsofin2_.usertrips_id where user0_.id=?
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@310ea45e]
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2e57f721]
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1394de24]
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@74b49037]
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4164157b]
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.cityLocation
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.comment
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.description
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.title
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.url
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.158 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Usertrips.Pointsofinterest.usertrips
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.cityLocation
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.comment
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.dateRegistered
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.rating
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Usertrips.user
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : Usertrips.user
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : firstName
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : lastName
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : password
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.User, querySpaceUid=<gen:0>, path=dqtravelspots.entity.User)
+          - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.User.Usertrips, querySpaceUid=<gen:1>, path=dqtravelspots.entity.User.Usertrips)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:2>, path=dqtravelspots.entity.User.Usertrips.<elements>)
+                - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:3>, path=dqtravelspots.entity.User.Usertrips.<elements>.Pointsofinterest)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:4>, path=dqtravelspots.entity.User.Usertrips.<elements>.Pointsofinterest.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(Usertrips)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=dqtravelspots.entity.User.Usertrips)
+                - SQL table alias mapping - usertrips1_
+                - alias suffix - 1_
+                - suffixed key columns - {user_id6_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=dqtravelspots.entity.Usertrip)
+                      - SQL table alias mapping - usertrips1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(Pointsofinterest)) : <gen:2> -> <gen:3>
+                         - CollectionQuerySpaceImpl(uid=<gen:3>, collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+                            - SQL table alias mapping - pointsofin2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {usertrip8_0_3_}
+                            - entity-element alias suffix - 4_
+                            - 4_entity-element suffixed key columns - id1_0_4_
+                            - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                               - EntityQuerySpaceImpl(uid=<gen:4>, entity=dqtravelspots.entity.Pointofinterest)
+                                  - SQL table alias mapping - pointsofin2_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {id1_0_4_}
+
+[DEBUG] 2019-12-01 12:13:40.159 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.User [READ]: select user0_.id as id1_2_0_, user0_.date_registered as date_reg2_2_0_, user0_.email as email3_2_0_, user0_.first_name as first_na4_2_0_, user0_.last_name as last_nam5_2_0_, user0_.password as password6_2_0_, user0_.user_name as user_nam7_2_0_, usertrips1_.user_id as user_id6_3_1_, usertrips1_.id as id1_3_1_, usertrips1_.id as id1_3_2_, usertrips1_.citylocationcode as cityloca2_3_2_, usertrips1_.comment as comment3_3_2_, usertrips1_.date_registered as date_reg4_3_2_, usertrips1_.rating as rating5_3_2_, usertrips1_.user_id as user_id6_3_2_, pointsofin2_.usertrips_id as usertrip8_0_3_, pointsofin2_.id as id1_0_3_, pointsofin2_.id as id1_0_4_, pointsofin2_.citylocationcode as cityloca2_0_4_, pointsofin2_.comment as comment3_0_4_, pointsofin2_.date_registered as date_reg4_0_4_, pointsofin2_.description as descript5_0_4_, pointsofin2_.title as title6_0_4_, pointsofin2_.url as url7_0_4_, pointsofin2_.usertrips_id as usertrip8_0_4_ from user user0_ left outer join usertrips usertrips1_ on user0_.id=usertrips1_.user_id left outer join pointofinterest pointsofin2_ on usertrips1_.id=pointsofin2_.usertrips_id where user0_.id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] Loader - Static select for action ACTION_MERGE on entity dqtravelspots.entity.User: select user0_.id as id1_2_1_, user0_.date_registered as date_reg2_2_1_, user0_.email as email3_2_1_, user0_.first_name as first_na4_2_1_, user0_.last_name as last_nam5_2_1_, user0_.password as password6_2_1_, user0_.user_name as user_nam7_2_1_, usertrips1_.user_id as user_id6_3_3_, usertrips1_.id as id1_3_3_, usertrips1_.id as id1_3_0_, usertrips1_.citylocationcode as cityloca2_3_0_, usertrips1_.comment as comment3_3_0_, usertrips1_.date_registered as date_reg4_3_0_, usertrips1_.rating as rating5_3_0_, usertrips1_.user_id as user_id6_3_0_ from user user0_ left outer join usertrips usertrips1_ on user0_.id=usertrips1_.user_id where user0_.id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] Loader - Static select for action ACTION_REFRESH on entity dqtravelspots.entity.User: select user0_.id as id1_2_1_, user0_.date_registered as date_reg2_2_1_, user0_.email as email3_2_1_, user0_.first_name as first_na4_2_1_, user0_.last_name as last_nam5_2_1_, user0_.password as password6_2_1_, user0_.user_name as user_nam7_2_1_, usertrips1_.user_id as user_id6_3_3_, usertrips1_.id as id1_3_3_, usertrips1_.id as id1_3_0_, usertrips1_.citylocationcode as cityloca2_3_0_, usertrips1_.comment as comment3_3_0_, usertrips1_.date_registered as date_reg4_3_0_, usertrips1_.rating as rating5_3_0_, usertrips1_.user_id as user_id6_3_0_ from user user0_ left outer join usertrips usertrips1_ on user0_.id=usertrips1_.user_id where user0_.id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister - Static SQL for entity: dqtravelspots.entity.Role
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role_name as role_nam2_1_, role_.user_id as user_id3_1_, role_.user_name as user_nam4_1_ from role role_ where role_.id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Insert 0: insert into role (role_name, user_id, user_name, id) values (?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Update 0: update role set role_name=?, user_id=?, user_name=? where id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] AbstractEntityPersister -  Identity insert: insert into role (role_name, user_id, user_name) values (?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1a75b1ae]
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userID
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-01 12:13:40.160 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Role, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Role [NONE]: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id3_1_0_, role0_.user_name as user_nam4_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c5e729d]
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userID
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(entity=dqtravelspots.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=dqtravelspots.entity.Role, querySpaceUid=<gen:0>, path=dqtravelspots.entity.Role)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=dqtravelspots.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] EntityLoader - Static select for entity dqtravelspots.entity.Role [READ]: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id3_1_0_, role0_.user_name as user_nam4_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-12-01 12:13:40.161 [http-nio-8080-exec-1] Loader - Static select for action ACTION_MERGE on entity dqtravelspots.entity.Role: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id3_1_0_, role0_.user_name as user_nam4_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-12-01 12:13:40.162 [http-nio-8080-exec-1] Loader - Static select for action ACTION_REFRESH on entity dqtravelspots.entity.Role: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id3_1_0_, role0_.user_name as user_nam4_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@57e20a55]
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74d48a0e]
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : Pointsofinterest
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@29d89a2b]
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@790ce1e4]
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.170 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.171 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : rating
+[DEBUG] 2019-12-01 12:13:40.171 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2019-12-01 12:13:40.171 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2019-12-01 12:13:40.171 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.174 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.174 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(collection=dqtravelspots.entity.User.Usertrips)
+    - Returns
+       - CollectionReturnImpl(collection=dqtravelspots.entity.User.Usertrips, querySpaceUid=<gen:0>, path=[dqtravelspots.entity.User.Usertrips])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Usertrip, querySpaceUid=<gen:1>, path=[dqtravelspots.entity.User.Usertrips].<elements>)
+             - CollectionAttributeFetchImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:2>, path=[dqtravelspots.entity.User.Usertrips].<elements>.Pointsofinterest)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:3>, path=[dqtravelspots.entity.User.Usertrips].<elements>.Pointsofinterest.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=dqtravelspots.entity.User.Usertrips)
+          - SQL table alias mapping - usertrips0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id6_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_3_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dqtravelspots.entity.Usertrip)
+                - SQL table alias mapping - usertrips0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+
+[DEBUG] 2019-12-01 12:13:40.174 [http-nio-8080-exec-1] CollectionLoader - Static select for collection dqtravelspots.entity.User.Usertrips: select usertrips0_.user_id as user_id6_3_0_, usertrips0_.id as id1_3_0_, usertrips0_.id as id1_3_1_, usertrips0_.citylocationcode as cityloca2_3_1_, usertrips0_.comment as comment3_3_1_, usertrips0_.date_registered as date_reg4_3_1_, usertrips0_.rating as rating5_3_1_, usertrips0_.user_id as user_id6_3_1_ from usertrips usertrips0_ where usertrips0_.user_id=?
+[DEBUG] 2019-12-01 12:13:40.174 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@240cddb0]
+[DEBUG] 2019-12-01 12:13:40.174 [http-nio-8080-exec-1] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24fe3fc9]
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : cityLocation
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : comment
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : dateRegistered
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : title
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : url
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Visiting attribute path : usertrips
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] MetamodelGraphWalker - Property path deemed to be circular : usertrips
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] LoadPlanTreePrinter - LoadPlan(collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+    - Returns
+       - CollectionReturnImpl(collection=dqtravelspots.entity.Usertrip.Pointsofinterest, querySpaceUid=<gen:0>, path=[dqtravelspots.entity.Usertrip.Pointsofinterest])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=dqtravelspots.entity.Pointofinterest, querySpaceUid=<gen:1>, path=[dqtravelspots.entity.Usertrip.Pointsofinterest].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=dqtravelspots.entity.Usertrip.Pointsofinterest)
+          - SQL table alias mapping - pointsofin0_
+          - alias suffix - 0_
+          - suffixed key columns - {usertrip8_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=dqtravelspots.entity.Pointofinterest)
+                - SQL table alias mapping - pointsofin0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2019-12-01 12:13:40.175 [http-nio-8080-exec-1] CollectionLoader - Static select for collection dqtravelspots.entity.Usertrip.Pointsofinterest: select pointsofin0_.usertrips_id as usertrip8_0_0_, pointsofin0_.id as id1_0_0_, pointsofin0_.id as id1_0_1_, pointsofin0_.citylocationcode as cityloca2_0_1_, pointsofin0_.comment as comment3_0_1_, pointsofin0_.date_registered as date_reg4_0_1_, pointsofin0_.description as descript5_0_1_, pointsofin0_.title as title6_0_1_, pointsofin0_.url as url7_0_1_, pointsofin0_.usertrips_id as usertrip8_0_1_ from pointofinterest pointsofin0_ where pointsofin0_.usertrips_id=?
+[DEBUG] 2019-12-01 12:13:40.249 [http-nio-8080-exec-1] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2019-12-01 12:13:40.249 [http-nio-8080-exec-1] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2019-12-01 12:13:40.250 [http-nio-8080-exec-1] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2019-12-01 12:13:40.263 [http-nio-8080-exec-1] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2019-12-01 12:13:40.264 [http-nio-8080-exec-1] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2019-12-01 12:13:40.264 [http-nio-8080-exec-1] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2019-12-01 12:13:40.264 [http-nio-8080-exec-1] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2019-12-01 12:13:40.267 [http-nio-8080-exec-1] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6ba4969e
+[DEBUG] 2019-12-01 12:13:40.269 [http-nio-8080-exec-1] SessionFactoryRegistry - Registering SessionFactory: 7e01a8d0-bd94-4cd7-88a5-dc43c14053d9 (<unnamed>)
+[DEBUG] 2019-12-01 12:13:40.269 [http-nio-8080-exec-1] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2019-12-01 12:13:40.394 [http-nio-8080-exec-1] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2019-12-01 12:13:40.409 [http-nio-8080-exec-1] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-12-01 12:13:40.409 [http-nio-8080-exec-1] TransactionImpl - begin
+[DEBUG] 2019-12-01 12:13:40.441 [http-nio-8080-exec-1] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-12-01 12:13:40.459 [http-nio-8080-exec-1] SQL - insert into user (date_registered, email, first_name, last_name, password, user_name) values (?, ?, ?, ?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.509 [http-nio-8080-exec-1] IdentifierGeneratorHelper - Natively generated identity: 15
+[DEBUG] 2019-12-01 12:13:40.509 [http-nio-8080-exec-1] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-01 12:13:40.515 [http-nio-8080-exec-1] TransactionImpl - committing
+[DEBUG] 2019-12-01 12:13:40.516 [http-nio-8080-exec-1] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-12-01 12:13:40.517 [http-nio-8080-exec-1] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-12-01 12:13:40.524 [http-nio-8080-exec-1] Collections - Collection found: [dqtravelspots.entity.User.Usertrips#15], was: [<unreferenced>] (initialized)
+[DEBUG] 2019-12-01 12:13:40.525 [http-nio-8080-exec-1] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2019-12-01 12:13:40.525 [http-nio-8080-exec-1] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2019-12-01 12:13:40.527 [http-nio-8080-exec-1] EntityPrinter - Listing entities:
+[DEBUG] 2019-12-01 12:13:40.527 [http-nio-8080-exec-1] EntityPrinter - dqtravelspots.entity.User{firstName=Frank, lastName=Poole, password=1234, Usertrips=[], id=15, userName=fpoole1, dateRegistered=Sun Dec 01 12:13:36 CST 2019, email=fpoole@gmail.com}
+[DEBUG] 2019-12-01 12:13:40.541 [http-nio-8080-exec-1] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-01 12:13:40.541 [http-nio-8080-exec-1] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-01 12:13:40.544 [http-nio-8080-exec-1] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2019-12-01 12:13:40.544 [http-nio-8080-exec-1] TransactionImpl - begin
+[DEBUG] 2019-12-01 12:13:40.545 [http-nio-8080-exec-1] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2019-12-01 12:13:40.545 [http-nio-8080-exec-1] SQL - insert into role (role_name, user_id, user_name) values (?, ?, ?)
+[DEBUG] 2019-12-01 12:13:40.582 [http-nio-8080-exec-1] IdentifierGeneratorHelper - Natively generated identity: 3
+[DEBUG] 2019-12-01 12:13:40.583 [http-nio-8080-exec-1] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2019-12-01 12:13:40.583 [http-nio-8080-exec-1] TransactionImpl - committing
+[DEBUG] 2019-12-01 12:13:40.583 [http-nio-8080-exec-1] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2019-12-01 12:13:40.583 [http-nio-8080-exec-1] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2019-12-01 12:13:40.584 [http-nio-8080-exec-1] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2019-12-01 12:13:40.584 [http-nio-8080-exec-1] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2019-12-01 12:13:40.584 [http-nio-8080-exec-1] EntityPrinter - Listing entities:
+[DEBUG] 2019-12-01 12:13:40.584 [http-nio-8080-exec-1] EntityPrinter - dqtravelspots.entity.Role{roleName=User, id=3, userName=fpoole1, userID=15}
+[DEBUG] 2019-12-01 12:13:40.596 [http-nio-8080-exec-1] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2019-12-01 12:13:40.597 [http-nio-8080-exec-1] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

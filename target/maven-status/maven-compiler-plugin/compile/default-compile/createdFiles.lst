@@ -8,3 +8,4 @@ dqtravelspots\persistence\SessionFactoryProvider.class
 dqtravelspots\controller\AddNewUser.class
 dqtravelspots\controller\SearchUserTrips.class
 dqtravelspots\persistence\UsertripDao.class
+dqtravelspots\entity\Role.class

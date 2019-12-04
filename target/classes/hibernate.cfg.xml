@@ -24,6 +24,7 @@
         <property name="hibernate.c3p0.idle_test_period">3000</property>
 
         <mapping class="dqtravelspots.entity.User" />
+        <mapping class="dqtravelspots.entity.Role" />
         <mapping class="dqtravelspots.entity.Usertrip" />
         <mapping class="dqtravelspots.entity.Pointofinterest" />
         <!--TODO add mapping for the new class**-->

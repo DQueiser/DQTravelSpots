@@ -1,5 +1,3 @@
-<%@ page import="netscape.javascript.JSObject" %>
-<%@ page import="java.io.ObjectInputStream" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
