@@ -8,6 +8,7 @@
 </head>
 <body style="background-color: oldlace">
 This is the SEARCH screen under construction </br>
+<!--http://geodb-cities-api.wirefreethought.com/-->
 <ul>
     <li><a href="newuser.jsp">I want to add a new user</a></li>
     <li><a href="tripsearch.jsp">I'm a real user and want to do a search</a></li>

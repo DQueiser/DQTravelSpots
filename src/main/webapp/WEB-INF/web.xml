@@ -76,6 +76,18 @@
         </auth-constraint>
     </security-constraint>
 
+    <!-- Protect the About page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>about1</web-resource-name>
+            <url-pattern>/about.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
 
   <!-- Protect the OLD search page. -->
   <security-constraint>

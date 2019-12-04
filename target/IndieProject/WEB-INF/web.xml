@@ -28,10 +28,71 @@
     </auth-constraint>
   </security-constraint>
 
-  <!-- Protect the search page. -->
+    <!-- Protect the search page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>search1</web-resource-name>
+            <url-pattern>/search.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the search results page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>search2</web-resource-name>
+            <url-pattern>/searchresults.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the usertrip page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>usertrip1</web-resource-name>
+            <url-pattern>/usertrip.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the usertrip details page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>usertrip2</web-resource-name>
+            <url-pattern>/usertripdetail.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the About page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>about1</web-resource-name>
+            <url-pattern>/about.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+
+  <!-- Protect the OLD search page. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>search1</web-resource-name>
+      <web-resource-name>search0</web-resource-name>
       <url-pattern>/tripsearch.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
