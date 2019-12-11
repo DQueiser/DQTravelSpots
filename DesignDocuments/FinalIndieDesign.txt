@@ -1,0 +1,39 @@
+This code was removed from the index.jsp:
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    session = request.getSession(false);
+    if (session!=null)
+    {
+        session.invalidate();
+    }
+%>
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Login screen:
+ - user can log in
+ - can go create a new login
+ - can reset fields
+
+Index (Main screen)
+ - Can go to conduct a new search (Search1)
+ - Can review their saved trips (Usertrip)
+ - Read About the application
+
+Search1
+ - Provide list of planets, retrieved from API
+ - User selects a planet, we go to Search2
+
+Search2
+ - Reads database (my own) to find POIs on that planet
+ - Lists out all POIs
+ - Also has button to add POI myself
+ - Each item in list will have the option to save it to my trip
+ - Adding a POI will refresh the list to include the new item
+
+AddPOI
+ - Will have all fields needed to add a POI
+
+Usertrip
+ - Read database table usertrips and displays results

@@ -1,0 +1,10 @@
+
+Ssquid:S2629Y"7Use the built-in formatting to construct this argument.(Ž÷Ûœûÿÿÿÿ
+Nsquid:S2629d"7Use the built-in formatting to construct this argument.(»þ«‡
+Nsquid:S2629t"7Use the built-in formatting to construct this argument.(¶ÓÀû
+esquid:UselessImportCheck"ARemove this unused import 'dqtravelspots.entity.Pointofinterest'.(Ý¯÷¨
+Tsquid:S1854V"8Remove this useless assignment to local variable "root".(ã¬º§ÿÿÿÿÿ
+]squid:S3457Y"AFormat specifiers should be used instead of string concatenation.(Ž÷Ûœûÿÿÿÿ
+Xsquid:S3457d"AFormat specifiers should be used instead of string concatenation.(»þ«‡
+Xsquid:S3457t"AFormat specifiers should be used instead of string concatenation.(¶ÓÀû
+Esquid:S1481V")Remove this unused "root" local variable.(ã¬º§ÿÿÿÿÿ

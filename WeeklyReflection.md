@@ -150,4 +150,18 @@ Tasks Completed:
  * New user capability has been cleaned up
 
 Preparing for the code review in class tonight. Have all JSPs in place (although not fully constructed). Two weeks to finish this puppy.
- 
+
+### Week 15
+
+12/11/2019 - 15.0 hours; more on the way
+
+Tasks Completed:
+ * Somehow not creating a laptop-shaped hole in the wall
+ * Nutcracker!
+
+Essentially, every time I tried to take a step forward this week I took one or two steps backwards. It's not pretty. The API I intended on using 1) doesn't work when I test it, and 2) doesn't actually work the way I anticipated to begin with. So basically it's time to revisit the whole thing. One travel app coming up, although it won't be as originally planned. One week to code this thing. I believe it was General Patton who said "You're only defeated when you admit it". So let's do this thing. Countdown begins. When people ask me what I got them for Christmas I'll tell them "I'm giving you a working API call in my final project. What?"
+  
+But on a side note, our Nutcracker performance on Saturday went amazingly well. We had more family and friends come to watch than ever before. Check that one off the Christmas list.
+
+![](DadPartyGirl.jpeg)
+![](0C5A2557_sm.jpg)
