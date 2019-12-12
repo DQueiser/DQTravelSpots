@@ -83,3 +83,13 @@ C
 WeeklyReflection.md,1\0\102dd9f48f53df56afc5e02b6e31721e05b42d4e
 I
 SQL scripts and notes.txt,0\3\039164e43c9496f1312ba1f44d598887d0f4e390
+X
+(logs/DQTravelSpotsHibernate_20191211.log,8\2\82b237b53ebd3308ec6d7c7eb6b5e197d7115145
+F
+logs/DQTravelSpots.log,3\a\3a9b401baf18bf46b4e6b3f7f185dae4caeebda3
+k
+;src/test/java/dqtravelspots/service/PlanetsServiceTest.java,3\e\3ea6072664ebd53f78a4e0dda69f27208a07b26f
+J
+src/main/webapp/logout.jsp,e\7\e7a26d636a815ab45217ad388a04d73824e80eff
+q
+Asrc/main/java/dqtravelspots/controller/SearchUserTripDetails.java,2\d\2dab1d479b13f8649813bf863527210260722d20

@@ -1,0 +1,17 @@
+
+bsquid:CommentedOutCodeLine0"<This block of commented-out lines of code should be removed.(˜½€«
+nsquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(×öº¯üÿÿÿÿ8µüÝ½ï-
+Qsquid:S1161":Add the "@Override" annotation above this method signature(²ñ‹ì
+=squid:S1989;"&Add a "try/catch" block for "forward".(òø½
+[
+squid:S106""9Replace this use of System.out or System.err by a logger.(ûñ”üùÿÿÿÿ8Ö¢å½ï-
+=squid:S1989;"&Add a "try/catch" block for "forward".(òø½
+isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(¾Ô×Ù8Äý†½ï-
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÇ¡ýÿÿÿÿ
+Esquid:S1989!"'Add a "try/catch" block for "parseInt".(å”ç8Šôâ½ï-
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(ž¯¡ßøÿÿÿÿ8‘Ôó½ï-
+O
+squid:S106'"9Replace this use of System.out or System.err by a logger.(û¢ú
+[
+squid:S106."9Replace this use of System.out or System.err by a logger.(È«Ùäÿÿÿÿÿ8Ä¹ö½ï-

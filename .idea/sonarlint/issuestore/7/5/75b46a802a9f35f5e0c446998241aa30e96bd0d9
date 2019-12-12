@@ -1,7 +1,7 @@
 
-vsquid:S2293Р"YReplace the type specification in this constructor call with the diamond operator ("<>").(╦бр■№    
-@squid:S1481D")Remove this unused "root" local variable.(с┌Г╗
-^squid:UselessImportCheck":Remove this unused import 'dqtravelspots.entity.Usertrip'.(с╙їЎ
-Osquid:S1854D"8Remove this useless assignment to local variable "root".(с┌Г╗
-esquid:UselessImportCheck"ARemove this unused import 'dqtravelspots.entity.Pointofinterest'.(▌пўи
-Asquid:S1068"*Remove this unused "logger" private field.(ц╫т┴
+esquid:UselessImportCheck":Remove this unused import 'dqtravelspots.entity.Usertrip'.(с╙їЎ8а│н┐я-
+lsquid:UselessImportCheck"ARemove this unused import 'dqtravelspots.entity.Pointofinterest'.(▌пўи8а│н┐я-
+Vsquid:S1854D"8Remove this useless assignment to local variable "root".(с┌Г╗8а│н┐я-
+}squid:S2293Р"YReplace the type specification in this constructor call with the diamond operator ("<>").(╦бр■№    8а│н┐я-
+Gsquid:S1481D")Remove this unused "root" local variable.(с┌Г╗8а│н┐я-
+Hsquid:S1068"*Remove this unused "logger" private field.(ц╫т┴8а│н┐я-

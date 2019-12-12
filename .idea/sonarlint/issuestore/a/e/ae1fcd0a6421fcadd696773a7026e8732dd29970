@@ -1,4 +1,11 @@
 
-cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
-Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
->	Web:S1827")Remove this deprecated "align" attribute.(Š³«Ê
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+F	Web:S5256"%Add "<th>" headers to this "<table>".(½Ñì¤üÿÿÿÿ8ÌäÆ»ï-
+s Web:TableHeaderHasIdOrScopeCheck ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ß“şæøÿÿÿÿ8Ûı€¾ï-
+TWeb:TableWithoutCaptionCheck" Add a description to this table.(Èƒ€ıÿÿÿÿ8Ûı€¾ï-
+C	Web:S1827")Remove this deprecated "align" attribute.(Ø¤üÿÿÿÿ
+s Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ûéú»ÿÿÿÿÿ8Ûı€¾ï-
+s Web:TableHeaderHasIdOrScopeCheck!";Add either an 'id' or a 'scope' attribute to this <th> tag.(™¯ˆÖùÿÿÿÿ8Ûı€¾ï-
+s Web:TableHeaderHasIdOrScopeCheck"";Add either an 'id' or a 'scope' attribute to this <th> tag.(€ø²Úıÿÿÿÿ8Ûı€¾ï-
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+TWeb:TableWithoutCaptionCheck" Add a description to this table.(½Ñì¤üÿÿÿÿ8ÌäÆ»ï-
