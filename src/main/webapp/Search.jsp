@@ -7,12 +7,17 @@
     <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
-<FORM ACTION="searchPOI" METHOD="POST">
+<FORM ACTION="searchPOI" METHOD="get">
     <TABLE style="margin-left: auto;margin-right: auto">
         <TR><TD><br></TD></TR>
         <TR>
             <TD><button type="submit" class="btn btn-default">Let's do a Search</button></TD>
+            <TD style="margin-left: auto;margin-right: auto">     </TD>
+            <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to main screen</a></TD>
+            <TD style="margin-left: auto;margin-right: auto">     </TD>
+            <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/About.jsp" class="btn btn-default">About This Application</a></TD>
         </TR>
+
     </TABLE>
 
 

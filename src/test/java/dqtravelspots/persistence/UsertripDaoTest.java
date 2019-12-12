@@ -59,10 +59,11 @@ public class UsertripDaoTest {
         UserDao userDao = new UserDao();
         User user = userDao.getById(1);
         String newUTLocation = "ILCHI";
+        int newUTNumPOI = 6;
         String newUTRating = "2";
         String newUTComment = "Wonderfully awesome, except for that traffic";
         Date today = new Date();
-        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTRating, newUTComment, today);
+        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTNumPOI,newUTRating, newUTComment, today);
         user.addTrip(newUserTrip);
         int id = dao.insert(newUserTrip);
         assertNotEquals(0, id);
@@ -81,6 +82,7 @@ public class UsertripDaoTest {
         UserDao userDao = new UserDao();
         User user = userDao.getById(2);
         String newUTLocation = "CapeHatNC";
+        int newUTNumPOI = 6;
         String newUTRating = "9";
         String newUTComment = "Lighthouses! Seafood! Fly a kite!!";
         String newPOITitle = "Wright Brothers Memorial";
@@ -88,7 +90,7 @@ public class UsertripDaoTest {
         String newPOIComment = "7";
         String newPOIUrl = "www.imadethisup.edu";
         Date today = new Date();
-        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTRating, newUTComment, today);
+        Usertrip newUserTrip = new Usertrip(user, newUTLocation, newUTNumPOI, newUTRating, newUTComment, today);
         Pointofinterest pointOfInterest = new Pointofinterest(newUserTrip,newUTLocation,newPOITitle,newPOIDescription, newPOIComment, newPOIUrl, today);
         newUserTrip.addPointOfInterest(pointOfInterest);
         int id = dao.insert(newUserTrip);

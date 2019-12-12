@@ -79,3 +79,7 @@ c
 3src/main/java/dqtravelspots/controller/Search1.java,6\0\6039ae3c1c7400f8f4a3ed23e88ffdf4e4c5c2df
 g
 7src/main/java/dqtravelspots/service/PlanetsService.java,8\1\812a6ebade0706a9ba7e361cbe2d5f28e6d609b0
+C
+WeeklyReflection.md,1\0\102dd9f48f53df56afc5e02b6e31721e05b42d4e
+I
+SQL scripts and notes.txt,0\3\039164e43c9496f1312ba1f44d598887d0f4e390

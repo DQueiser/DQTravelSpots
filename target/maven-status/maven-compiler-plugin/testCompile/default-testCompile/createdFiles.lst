@@ -1,4 +1,5 @@
-dqtravelspots\persistence\UserDaoTest.class
 dqtravelspots\testUtils\Database.class
 dqtravelspots\persistence\PointofinterestDaoTest.class
 dqtravelspots\persistence\UsertripDaoTest.class
+dqtravelspots\service\PlanetsServiceTest.class
+dqtravelspots\persistence\UserDaoTest.class

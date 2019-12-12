@@ -80,11 +80,12 @@ public class UserDaoTest {
         String newUserUname = "dbowman1";
         String newUserPassword = "Supersecret2!";
         String tripCityLoc = "MILWWI";
+        int tripCount = 6;
         String tripRating = "5";
         String tripComment = "Definitely worth a second look";
         Date today = new Date();
         User newUser = new User(newUserFirst, newUserLast, newUserEmail, newUserUname, newUserPassword, today);
-        Usertrip newUserTrip = new Usertrip(newUser, tripCityLoc, tripRating, tripComment, today);
+        Usertrip newUserTrip = new Usertrip(newUser, tripCityLoc, tripCount, tripRating, tripComment, today);
         newUser.addTrip(newUserTrip);
         int id = dao.insert(newUser);
         assertNotEquals(0, id);

@@ -36,7 +36,7 @@ public class Search1 extends HttpServlet {
     GenericDao dao;
     GenericDao dao2;
 
-    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         Boolean isValid = true;
 

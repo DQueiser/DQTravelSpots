@@ -43,6 +43,7 @@ Application context = /IndieProject_war
       PRIMARY KEY,
     user_id   INT         NOT NULL,
     citylocationcode VARCHAR(70) NOT NULL,
+    numofpoints int NOT NULL,
     rating VARCHAR(25) NOT NULL,
     comment VARCHAR(1000) NOT NULL,
     date_registered datetime NOT NULL,
@@ -78,6 +79,10 @@ Application context = /IndieProject_war
 
   CREATE INDEX pointofinterest_usertrips_id_fk
     ON pointofinterest (usertrips_id);
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+ALTER TABLE usertrips
+ADD COLUMN numofpoints INT NOT NULL AFTER citylocationcode;
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 These were used to set up MySQL in AWS:

@@ -88,6 +88,18 @@
         </auth-constraint>
     </security-constraint>
 
+    <!-- Protect the Logout page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>logout1</web-resource-name>
+            <url-pattern>/logout.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
 
   <!-- Protect the OLD search page. -->
   <security-constraint>

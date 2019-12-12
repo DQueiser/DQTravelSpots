@@ -8,16 +8,19 @@
     <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
+<FORM ACTION="searchUserTrips" METHOD="GET">
     <TABLE style="margin-left: auto;margin-right: auto">
         <TR><TD><br></TD></TR>
         <TR>
             <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/Search.jsp" class="btn btn-default">Search a Destination</a></TD>
             <TD style="margin-left: auto;margin-right: auto">     </TD>
-            <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/UserTrip.jsp" class="btn btn-default">Review My Trips</a></TD>
+            <TD><button type="submit" class="btn btn-default">Review My Trips</button></TD>
             <TD style="margin-left: auto;margin-right: auto">     </TD>
             <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/About.jsp" class="btn btn-default">About This Application</a></TD>
+            <TD style="margin-left: auto;margin-right: auto">     </TD>
+            <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/logout.jsp" class="btn btn-default">Logout</a></TD>
         </TR>
     </TABLE>
-
+</FORM>
 </body>
 </html>

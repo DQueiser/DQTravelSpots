@@ -1,4 +1,4 @@
-This code was removed from the index.jsp:
+This code was removed from the index.jsp, later added to logout.jsp:
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -20,6 +20,7 @@ Index (Main screen)
  - Can go to conduct a new search (Search1)
  - Can review their saved trips (Usertrip)
  - Read About the application
+ - log out of the application
 
 Search1
  - Provide list of planets, retrieved from API

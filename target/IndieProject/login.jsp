@@ -7,7 +7,7 @@
     <title>Welcome!</title>
 </head>
 <body style="background-color: oldlace;">
-    <h1 style="text-align:center; color: darkgreen">DQTravelSpots - Find your place in the world</h1>
+    <h1 style="text-align:center; color: darkgreen">DQTravelSpots - Find your place in the Galaxy</h1>
     <FORM ACTION="j_security_check" METHOD="POST">
         <TABLE style="margin-left: auto;margin-right: auto">
             <TR>

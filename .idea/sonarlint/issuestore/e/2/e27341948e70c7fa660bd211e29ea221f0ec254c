@@ -1,9 +1,13 @@
 
+bsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(˜½€«
+=squid:S1989<"&Add a "try/catch" block for "forward".(òø½
+V
+squid:S106("9Replace this use of System.out or System.err by a logger.(€©é8…ÄÕ´ï-
+bsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ÖáÚ¢
 esquid:UselessImportCheck"ARemove this unused import 'dqtravelspots.entity.Pointofinterest'.(Ý¯÷¨
-Qsquid:S1161!":Add the "@Override" annotation above this method signature(²ñ‹ì
-=squid:S1989:"&Add a "try/catch" block for "forward".(òø½
-=squid:S1989:"&Add a "try/catch" block for "forward".(òø½
 asquid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(âÀ|
-bsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ÖáÚ¢
-bsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(˜½€«
-tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(†œš÷ùÿÿÿÿ
+osquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(À¯ï
+V
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ë—êº8®§Ö´ï-
+=squid:S1989<"&Add a "try/catch" block for "forward".(òø½
+Vsquid:S1161!":Add the "@Override" annotation above this method signature(ôƒ×îÿÿÿÿÿ

@@ -1,6 +1,7 @@
 dqtravelspots\entity\Planet.class
 dqtravelspots\entity\Usertrip.class
 dqtravelspots\persistence\UserDao.class
+dqtravelspots\controller\SearchUserTripDetails.class
 dqtravelspots\persistence\GenericDao.class
 dqtravelspots\controller\Search1.class
 dqtravelspots\persistence\PointofinterestDao.class

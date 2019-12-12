@@ -3,7 +3,7 @@ package dqtravelspots.controller;
 import dqtravelspots.entity.Pointofinterest;
 import dqtravelspots.entity.User;
 import dqtravelspots.entity.Usertrip;
-import dqtravelspots.persistence.UsertripDao;
+import dqtravelspots.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -28,7 +28,7 @@ import java.util.List;
 public class SearchUserTrips extends HttpServlet {
     //@Override
     private final Logger logger = LogManager.getLogger(this.getClass());
-    UsertripDao dao = new UsertripDao();
+    GenericDao tripDao = new GenericDao(Usertrip.class);
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -37,12 +37,15 @@ public class SearchUserTrips extends HttpServlet {
         //logger.info("The search term is " + searchTerm);
         //logger.info("The search type is " + searchType);
 
-        logger.debug("DQTEST1: Setting up the DAO");
-        //logger.debug("DQTEST2: DAO is set; ");
+        System.out.println("DQTEST4A: In the SearchUserTrip servlet, DAO is ready");
+        logger.debug("DQTEST4A: : In the SearchUserTrip servlet, DAO is ready");
         //List<Usertrip> userTrips = dao.getByPropertyEqual("cityLocation", "ACIDPLANIT");
-        List<Usertrip> userTrips = dao.getByUserID(2);
-        logger.debug("DQTEST2: Searching for some usertrips and passing to req");
+        System.out.println("DQTEST4B: Searching for some usertrips and passing to req");
+        logger.debug("DQTEST4B: Searching for some usertrips and passing to req");
+        List<Usertrip> userTrips = tripDao.findByPropertyEqual("user",2);
+        System.out.println("DQTEST4C: I found this many trips:" + userTrips.size());
         req.setAttribute("userTrips", userTrips);
+        System.out.println("DQTEST4D: userTrips has been added to req");
 
         //if (searchType.equals("emp_id")) {
             //req.setAttribute("users", userData.getUsersByID(searchTerm));
@@ -54,7 +57,7 @@ public class SearchUserTrips extends HttpServlet {
             //req.setAttribute("users", userData.getAllUsers(searchTerm));
         //}
 
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/tripsearchresults.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/UserTrip.jsp");
         dispatcher.forward(req, resp);
     }
 }

@@ -21,6 +21,9 @@ public class Usertrip {
     @Column(name = "citylocationcode")
     private String cityLocation;
 
+    @Column(name = "numofpoints")
+    private int numOfPoints;
+
     @Column(name = "rating")
     private String rating;
 
@@ -47,13 +50,15 @@ public class Usertrip {
      * Instantiates a new Usertrip.
      * @param user
      * @param cityLocation
+     * @param numOfPoints
      * @param rating
      * @param comment
      * @param dateRegistered
      */
-    public Usertrip(User user, String cityLocation, String rating, String comment, Date dateRegistered) {
+    public Usertrip(User user, String cityLocation, int numOfPoints, String rating, String comment, Date dateRegistered) {
         this.user = user;
         this.cityLocation = cityLocation;
+        this.numOfPoints = numOfPoints;
         this.rating = rating;
         this.comment = comment;
         this.dateRegistered = dateRegistered;
@@ -111,6 +116,24 @@ public class Usertrip {
      */
     public void setCityLocation(String cityLocation) {
         this.cityLocation = cityLocation;
+    }
+
+    /**
+     * Gets number of Points of Interest.
+     *
+     * @return the numberofpoints
+     */
+    public int getNumOfPoints() {
+        return numOfPoints;
+    }
+
+    /**
+     * Sets numberofpoints.
+     *
+     * @param numOfPoints the number of points of interes
+     */
+    public void setNumOfPoints(int numOfPoints) {
+        this.numOfPoints = numOfPoints;
     }
 
     /**
