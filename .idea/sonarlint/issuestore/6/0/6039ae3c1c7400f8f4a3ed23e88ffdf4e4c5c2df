@@ -1,25 +1,25 @@
 
-Zsquid:S2589B"7Remove this expression which always evaluates to "true"(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
-dsquid:S00112R"FDefine and throw a dedicated exception instead of using a generic one.(Œ”≈+8£”„πÔ-
-Msquid:S5411B"*Use the primitive boolean expression here.(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
-Fsquid:S11481"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ8£”„πÔ-
-Xsquid:S1161'":Add the "@Override" annotation above this method signature(≤ÒãÏ8£”„πÔ-
-V
-squid:S106,"9Replace this use of System.out or System.err by a logger.(÷Áœ«8£”„πÔ-
-Ksquid:S1125B"(Remove the literal "true" boolean value.(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
-Dsquid:S1989K"&Add a "try/catch" block for "forward".(Ú¯çΩ8£”„πÔ-
-Dsquid:S1989K"&Add a "try/catch" block for "forward".(Ú¯çΩ8£”„πÔ-
-V
-squid:S106S"9Replace this use of System.out or System.err by a logger.(áıñÍ8£”„πÔ-
-U
-squid:S106U"9Replace this use of System.out or System.err by a logger.(Ä°Ë>8£”„πÔ-
-V
-squid:S106W"9Replace this use of System.out or System.err by a logger.(¶Ã¨ﬁ8£”„πÔ-
-nsquid:CommentedOutCodeLine4"<This block of commented-out lines of code should be removed.(çé˙ä˙ˇˇˇˇ8£”„πÔ-
-isquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(ËóÕ¡8£”„πÔ-
-nsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ÎôÎ–˝ˇˇˇˇ8£”„πÔ-
-isquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(œ◊’ã8£”„πÔ-
-hsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(™¨º`8£”„πÔ-
-nsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(Ω˘”ª˛ˇˇˇˇ8£”„πÔ-
-{squid:S2226$"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µŒûí˚ˇˇˇˇ8£”„πÔ-
-vsquid:S2226%"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(≈ûúÚ8£”„πÔ-
+bsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Œ”≈+8£”„πÔ-
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(≈ûúÚ8£”„πÔ-
+Vsquid:S1161":Add the "@Override" annotation above this method signature(≤ÒãÏ8£”„πÔ-
+Isquid:S1125"(Remove the literal "true" boolean value.(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(çé˙ä˙ˇˇˇˇ8£”„πÔ-
+Bsquid:S1989"&Add a "try/catch" block for "forward".(Ú¯çΩ8£”„πÔ-
+Ksquid:S5411"*Use the primitive boolean expression here.(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
+Xsquid:S2589"7Remove this expression which always evaluates to "true"(Ω›†µ¯ˇˇˇˇ8£”„πÔ-
+Bsquid:S1989"&Add a "try/catch" block for "forward".(Ú¯çΩ8£”„πÔ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(áıñÍ8£”„πÔ-
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ä°Ë>8£”„πÔ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ËóÕ¡8£”„πÔ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÎôÎ–˝ˇˇˇˇ8£”„πÔ-
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(™¨º`8£”„πÔ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¶Ã¨ﬁ8£”„πÔ-
+Dsquid:S1148"#Use a logger to log this exception.(Ä…‘Ö˝ˇˇˇˇ8£”„πÔ-
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œ◊’ã8£”„πÔ-
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ω˘”ª˛ˇˇˇˇ8£”„πÔ-
+ysquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µŒûí˚ˇˇˇˇ8£”„πÔ-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(÷Áœ«8£”„πÔ-

@@ -85,6 +85,23 @@ ALTER TABLE usertrips
 ADD COLUMN numofpoints INT NOT NULL AFTER citylocationcode;
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+ CREATE TABLE touristspot
+ (
+   id        INT AUTO_INCREMENT
+     PRIMARY KEY,
+   planet_id VARCHAR(25) NOT NULL,
+   name VARCHAR(150) NOT NULL,
+   description VARCHAR(500) NOT NULL,
+   handicap VARCHAR(25) NOT NULL,
+   imperial VARCHAR(25) NOT NULL,
+   date_registered  datetime NOT NULL,
+   CONSTRAINT touristspot_id_uindex
+   UNIQUE (id)
+ )
+   ENGINE = InnoDB;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 These were used to set up MySQL in AWS:
 INSERT INTO user VALUES (1,'Dave','Queiser', 'dqueiser@gmail.com','dqueiser','Superstrong1','2019-10-13');
 INSERT INTO user VALUES (2,'Mark','Watney', 'mars1@rover.com','mwatney','BotanyPowersRule','2019-10-15 12:34:56');

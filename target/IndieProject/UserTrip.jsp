@@ -10,6 +10,7 @@
 
 <body style="background-color: oldlace">
 This is the USERTRIP screen under construction </br>
+<h1 style="text-align:center; color: darkgreen">Let's review your trips!</h1>
 <TABLE style="margin-left: auto;margin-right: auto">
     <TR><TD><br></TD></TR>
     <TR>

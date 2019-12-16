@@ -1,0 +1,14 @@
+
+Dsquid:S1989C"&Add a "try/catch" block for "forward".(òø½8Àıàğ-
+dsquid:S3457;"AFormat specifiers should be used instead of string concatenation.(¿ÑŞ©ûÿÿÿÿ8Àıàğ-
+Ysquid:S1854A"6Remove this useless assignment to local variable "id".(¥öüùøÿÿÿÿ8ÅÃáğ-
+asquid:UselessImportCheck"6Remove this unused import 'dqtravelspots.entity.User'.(ØÀìù8’Èƒáğ-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8÷¬ÆØğ-
+Qsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8÷¬ÆØğ-
+Dsquid:S1989C"&Add a "try/catch" block for "forward".(òø½8Àıàğ-
+tsquid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
+Jsquid:S1481A"'Remove this unused "id" local variable.(¥öüùøÿÿÿÿ8ÅÃáğ-
+Zsquid:S2629;"7Use the built-in formatting to construct this argument.(¿ÑŞ©ûÿÿÿÿ8Àıàğ-
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ã†ãâûÿÿÿÿ8Àıàğ-

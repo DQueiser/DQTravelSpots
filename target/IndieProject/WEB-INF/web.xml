@@ -100,6 +100,40 @@
         </auth-constraint>
     </security-constraint>
 
+    <!-- Protect the page to add a tourist spot. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>addspot1</web-resource-name>
+            <url-pattern>/Addspot1.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the first page to edit tourist spots. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>editspot1</web-resource-name>
+            <url-pattern>/Editspot1.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the second page to edit tourist spots. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>editspot2</web-resource-name>
+            <url-pattern>/Editspot2.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
 
   <!-- Protect the OLD search page. -->
   <security-constraint>

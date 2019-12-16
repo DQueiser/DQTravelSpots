@@ -1,0 +1,23 @@
+
+T
+squid:S106&"9Replace this use of System.out or System.err by a logger.(ï»ì—ÿÿÿÿÿ
+V
+squid:S106("9Replace this use of System.out or System.err by a logger.(ßşÁ8æÏäğ-
+=squid:S19894"&Add a "try/catch" block for "forward".(òø½
+Qsquid:S1161!":Add the "@Override" annotation above this method signature(²ñ‹ì
+V
+squid:S106+"9Replace this use of System.out or System.err by a logger.(ğöå•8öëäğ-
+nsquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ğ§Ò²üÿÿÿÿ8Á‚äğ-
+=squid:S19894"&Add a "try/catch" block for "forward".(òø½
+Ssquid:S2629%"7Use the built-in formatting to construct this argument.(şâİ¯şÿÿÿÿ
+[
+squid:S1063"9Replace this use of System.out or System.err by a logger.(Ç‹¡çùÿÿÿÿ8¼©äğ-
+]squid:S3457%"AFormat specifiers should be used instead of string concatenation.(şâİ¯şÿÿÿÿ
+Vsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8ÂÀ¬ãğ-
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(ŒíğŠüÿÿÿÿ8èµäğ-
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ÈøÚâ8šÛäğ-
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
+U
+squid:S106/"9Replace this use of System.out or System.err by a logger.(ìéà8¡ø«äğ-

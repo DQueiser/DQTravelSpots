@@ -4,12 +4,17 @@ C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Planet.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\PointofinterestDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\UsertripDao.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\AddSpot2.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\UserDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\SearchUserTripDetails.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Usertrip.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Touristspot.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\EditSpot2.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Role.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\EditSpot1.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\SearchUserTrips.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\Search1.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\persistence\GenericDao.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\entity\Pointofinterest.java
+C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\controller\AddSpot1.java
 C:\Users\Dave\IdeaProjects\IndieProject\src\main\java\dqtravelspots\service\PlanetsService.java

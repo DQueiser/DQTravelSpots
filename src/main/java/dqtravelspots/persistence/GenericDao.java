@@ -130,6 +130,22 @@ public class GenericDao<T> {
     }
 
     /**
+     * Finds entities by one of its properties (exact match).
+     * @param propertyName the property name.
+     * @param value the value by which to find.
+     * @return
+     */
+    public List<T> findByPropertyEqualQ(String propertyName, String value) {
+        Session session = getSession();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.equal(root.get(propertyName),value));
+
+        return session.createQuery(query).getResultList();
+    }
+
+    /**
      * Finds entities by multiple properties.
      * @param propertyMap property and value pairs
      * @return entities with properties equal to those passed in the map

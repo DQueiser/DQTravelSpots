@@ -1,3 +1,40 @@
+Need a "place" entity and a table go with it
+Fields on this will be:
+ - ID (self-generated)
+ - PlanetID (ties it to a Planet from the API)
+ - Name
+ - Description
+ - HandicapAccessible
+ - ImperialOnly
+ - DateRegistered
+
+Databse table and columns:
+Table=touristspot
+Columns=   id
+	planet_id VARCHAR(25)
+	name VARCHAR(150)
+	description VARCHAR(500)
+	handicap VARCHAR(25)
+	imperial VARCHAR(25)
+	date_registered  datetime
+
+Touristspot entity fields:
+	planetID
+	name
+	description
+	handicapAccess
+	imperialOnly
+	dateRegistered
+
+
+This will be a freestanding table containing places of interest on all planets
+The ID of this table will be stored in the User's POI table
+
+Will also need a key for all of the tables - I think I need more desciptive labels on each
+ and different buttons. Also, need some Admin ability (such as deleting Users)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This code was removed from the index.jsp, later added to logout.jsp:
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>

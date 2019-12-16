@@ -7,6 +7,7 @@
     <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
+<h1 style="text-align:center; color: darkgreen">Let's build a trip!</h1>
 <FORM ACTION="searchPOI" METHOD="get">
     <TABLE style="margin-left: auto;margin-right: auto">
         <TR><TD><br></TD></TR>

@@ -1,32 +1,32 @@
 
-osquid:S2226$"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Åœò
 Usquid:S4973;"9Use the "equals" method if value comparison was intended.(´‰Úšÿÿÿÿÿ
-Tsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
-=squid:S1989P"&Add a "try/catch" block for "forward".(òø½
+fsquid:UselessImportCheck"BRemove this unused import 'dqtravelspots.persistence.UsertripDao'.(æ
 O
 squid:S1066"9Replace this use of System.out or System.err by a logger.(«Ú¡Â
+T
+squid:S1069"9Replace this use of System.out or System.err by a logger.(¬Ë€Åıÿÿÿÿ
+Lsquid:S1989="0Add a "try/catch" block for "showMessageDialog".(óğîùÿÿÿÿ
+Fsquid:S5411G"*Use the primitive boolean expression here.(½İ µøÿÿÿÿ
+=squid:S1989P"&Add a "try/catch" block for "forward".(òø½
+O
+squid:S106+"9Replace this use of System.out or System.err by a logger.(´¦Ë€
+T
+squid:S1067"9Replace this use of System.out or System.err by a logger.(¯ø®ñúÿÿÿÿ
+Dsquid:S1125G"(Remove the literal "true" boolean value.(½İ µøÿÿÿÿ
+Tsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ
+=squid:S1989S"&Add a "try/catch" block for "forward".(òø½
+O
+squid:S1064"9Replace this use of System.out or System.err by a logger.(øøÄš
 ^squid:UselessImportCheck":Remove this unused import 'dqtravelspots.entity.Usertrip'.(áÓõö
 Nsquid:S1854N"7Remove this useless assignment to local variable "id2".(¨ÖŠŸ
 O
-squid:S1064"9Replace this use of System.out or System.err by a logger.(øøÄš
-T
-squid:S1069"9Replace this use of System.out or System.err by a logger.(¬Ë€Åıÿÿÿÿ
-?squid:S1481N"(Remove this unused "id2" local variable.(¨ÖŠŸ
-O
 squid:S1065"9Replace this use of System.out or System.err by a logger.(·˜¾¶
-=squid:S1989P"&Add a "try/catch" block for "forward".(òø½
+?squid:S1481N"(Remove this unused "id2" local variable.(¨ÖŠŸ
+tsquid:S2226#"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
+osquid:S2226$"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Åœò
 Vsquid:S1161&":Add the "@Override" annotation above this method signature(ôƒ×îÿÿÿÿÿ
-T
-squid:S1067"9Replace this use of System.out or System.err by a logger.(¯ø®ñúÿÿÿÿ
-Lsquid:S1989="0Add a "try/catch" block for "showMessageDialog".(óğîùÿÿÿÿ
-Fsquid:S5411G"*Use the primitive boolean expression here.(½İ µøÿÿÿÿ
-Dsquid:S1125G"(Remove the literal "true" boolean value.(½İ µøÿÿÿÿ
+=squid:S1989P"&Add a "try/catch" block for "forward".(òø½
 =squid:S1989S"&Add a "try/catch" block for "forward".(òø½
-fsquid:UselessImportCheck"BRemove this unused import 'dqtravelspots.persistence.UsertripDao'.(æ
-O
-squid:S106+"9Replace this use of System.out or System.err by a logger.(´¦Ë€
 O
 squid:S1068"9Replace this use of System.out or System.err by a logger.(®²‡ç
 Fsquid:S1989C"0Add a "try/catch" block for "showMessageDialog".(ğ®‘{
-=squid:S1989S"&Add a "try/catch" block for "forward".(òø½
-tsquid:S2226#"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
