@@ -8,15 +8,12 @@
     <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
-<h1 style="text-align:center; color: darkgreen">Let's add a tourist spot</h1>
+<jsp:include page="/popuPlanet1"/>
+<h1 style="text-align:center; color: darkgreen">Add a Place</h1>
 <TABLE style="margin-left: auto;margin-right: auto">
     <TR><TD><br></TD></TR>
     <TR>
-        <TD><button type="submit" class="btn btn-default">waka waka waka </button></TD>
-        <TD style="margin-left: auto;margin-right: auto">     </TD>
-        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to main screen</a></TD>
-        <TD style="margin-left: auto;margin-right: auto">     </TD>
-        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/About.jsp" class="btn btn-default">About This Application</a></TD>
+        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to Home Screen</a></TD>
     </TR>
 </TABLE>
 <FORM ACTION="addSpot2" METHOD="get" style="text-align: center; color: darkgreen">

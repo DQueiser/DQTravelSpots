@@ -1,4 +1,3 @@
-dqtravelspots\controller\AddSpot1.class
 dqtravelspots\entity\Planet.class
 dqtravelspots\entity\Usertrip.class
 dqtravelspots\persistence\UserDao.class
@@ -6,15 +5,17 @@ dqtravelspots\controller\SearchUserTripDetails.class
 dqtravelspots\persistence\GenericDao.class
 dqtravelspots\controller\Search1.class
 dqtravelspots\controller\AddSpot2.class
-dqtravelspots\controller\EditSpot1.class
+dqtravelspots\controller\searchSpots1.class
 dqtravelspots\persistence\PointofinterestDao.class
-dqtravelspots\controller\EditSpot2.class
 dqtravelspots\entity\Pointofinterest.class
 dqtravelspots\entity\User.class
 dqtravelspots\persistence\SessionFactoryProvider.class
 dqtravelspots\controller\AddNewUser.class
 dqtravelspots\entity\Touristspot.class
 dqtravelspots\service\PlanetsService.class
+dqtravelspots\controller\popuPlanet1.class
+dqtravelspots\controller\GetSpotDetails.class
 dqtravelspots\controller\SearchUserTrips.class
 dqtravelspots\persistence\UsertripDao.class
+dqtravelspots\controller\UpdateSpotDetails.class
 dqtravelspots\entity\Role.class

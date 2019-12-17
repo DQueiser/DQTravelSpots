@@ -8,19 +8,17 @@
     <title>Welcome to the DQTravelSpots application</title>
 </head>
 <body style="background-color: oldlace">
-<jsp:include page="/editSpot1"/>
+<jsp:include page="/popuPlanet1"/>
 <h1 style="text-align:center; color: darkgreen">Editing Places</h1>
 <TABLE style="margin-left: auto;margin-right: auto">
     <TR><TD><br></TD></TR>
     <TR>
-        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to main screen</a></TD>
-        <TD style="margin-left: auto;margin-right: auto">     </TD>
-        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/About.jsp" class="btn btn-default">About This Application</a></TD>
+        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to Home screen</a></TD>
     </TR>
 </TABLE>
-<FORM ACTION="editSpot2" METHOD="get" style="text-align: center; color: darkgreen">
+<FORM ACTION="/IndieProject_war/Editspots2.jsp" METHOD="get" style="text-align: center; color: darkgreen">
     <br><br>
-    <label style="color: darkgreen">What Planet is this Place on?</label>
+    <label style="color: darkgreen">What Planet?</label>
     <select name="planet1" style="text-align:center">
         <c:forEach var="mapEntry" items="${planetMap}">
             <option value="<c:out value='${mapEntry.key}'/>"><c:out value="${mapEntry.value}"/></option>

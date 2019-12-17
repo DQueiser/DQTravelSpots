@@ -40,6 +40,18 @@
         </auth-constraint>
     </security-constraint>
 
+    <!-- Protect the second search page. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>search2</web-resource-name>
+            <url-pattern>/SearchSpots1.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+            <role-name>User</role-name>
+        </auth-constraint>
+    </security-constraint>
+
     <!-- Protect the search results page. -->
     <security-constraint>
         <web-resource-collection>
@@ -128,6 +140,17 @@
         <web-resource-collection>
             <web-resource-name>editspot2</web-resource-name>
             <url-pattern>/Editspot2.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
+
+    <!-- Protect the page to edit tourist spot details. -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>editspot3</web-resource-name>
+            <url-pattern>/EditSpotDetail.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>Admin</role-name>

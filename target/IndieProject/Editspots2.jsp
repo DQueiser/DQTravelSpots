@@ -9,13 +9,13 @@
 </head>
 
 <body style="background-color: oldlace">
-<h1 style="text-align:center; color: darkgreen">Check out the list of places</h1>
+<jsp:include page="/searchSpots1"/>
+<h1 style="text-align:center; color: darkgreen">Places on that Planet</h1>
 <TABLE style="margin-left: auto;margin-right: auto">
     <TR><TD><br></TD></TR>
     <TR>
-        <TD style="margin-left: auto;margin-right: auto">     </TD>
+        <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/Editspot1.jsp" class="btn btn-default">Search another Planet</a></TD>
         <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to main screen</a></TD>
-        <TD style="margin-left: auto;margin-right: auto">     </TD>
     </TR>
 </TABLE>
 
@@ -32,8 +32,10 @@
                 </tr>
                 <c:forEach var="tourSpot" items="${tSpots1}">
                     <tr>
+                        <!--<td><a href="/IndieProject_war/UserTripDetail.jsp?trip=<c:out value='${userTrip.id}'/>"><c:out value="${userTrip.cityLocation}" /></a></td>-->
                         <td><c:out value="${tourSpot.planetID}" /></td>
-                        <td><c:out value="${tourSpot.name}" /></td>
+                        <!--<td><c:out value="${tourSpot.name}" /></td>-->
+                        <td><a href="/IndieProject_war/EditSpotDetail.jsp?place=<c:out value='${tourSpot.getId()}'/>"><c:out value="${tourSpot.getName()}" /></a></td>
                         <td><c:out value="${tourSpot.description}" /></td>
                     </tr>
                 </c:forEach>

@@ -28,7 +28,6 @@
         <mapping class="dqtravelspots.entity.Usertrip" />
         <mapping class="dqtravelspots.entity.Pointofinterest" />
         <mapping class="dqtravelspots.entity.Touristspot" />
-        <!--TODO add mapping for the new class**-->
     </session-factory>
 
 </hibernate-configuration>
