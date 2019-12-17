@@ -95,19 +95,25 @@ q
 Asrc/main/java/dqtravelspots/controller/SearchUserTripDetails.java,2\d\2dab1d479b13f8649813bf863527210260722d20
 T
 $DesignDocuments/FinalIndieDesign.txt,5\1\51665d8d547eae714567d32a23a848486aac310d
-e
-5src/main/java/dqtravelspots/controller/EditSpot1.java,0\7\07ef3302c746d3711df44b368e6768df3fcdade2
-d
-4src/main/java/dqtravelspots/controller/AddSpot1.java,9\b\9b02f2d258ec964d1220f37dad21aef41771e16e
 M
 src/main/webapp/Editspot1.jsp,b\7\b7279fb48c9f1c6825312573b16088b766a1236d
 L
 src/main/webapp/Addspot1.jsp,5\4\5422fd4295f64c21d4962dcb26fe127a81563258
 d
 4src/main/java/dqtravelspots/controller/AddSpot2.java,2\8\284f020d5d4790f1af2d84fb47b24e893ed75ed0
-e
-5src/main/java/dqtravelspots/controller/EditSpot2.java,4\b\4b96956864ec00f8df624cf7b5968e903d50b4df
 c
 3src/main/java/dqtravelspots/entity/Touristspot.java,8\d\8d01ffba2a1b581e320c1d50eb69b863b18554cf
 N
 src/main/webapp/Editspots2.jsp,5\b\5bb49b2dd9b36f09eb73bfd9189b52e11ba34208
+P
+ src/main/webapp/SearchSpots1.jsp,5\1\513c935d140bc57b8c79bd0b4c4cd0fe9b4c2d28
+j
+:src/main/java/dqtravelspots/controller/GetSpotDetails.java,7\2\721aea1b61431d4c61cc7b50929d7d8105c84b18
+R
+"src/main/webapp/EditSpotDetail.jsp,4\7\4779efb586aba0a8311764df726af72b9ff7d965
+g
+7src/main/java/dqtravelspots/controller/popuPlanet1.java,b\4\b4b9c51154ed27dad02210c092ef348c6edb5d95
+h
+8src/main/java/dqtravelspots/controller/searchSpots1.java,6\1\6109017710882330333b3e3673761abba8e2df02
+m
+=src/main/java/dqtravelspots/controller/UpdateSpotDetails.java,f\d\fd331f248840c61b7bb533ccaa8299e2b9a254c4

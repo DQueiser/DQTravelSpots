@@ -60,11 +60,19 @@ public class UpdateSpotDetails extends HttpServlet {
         }
         System.out.println("JKJ: The new Imperial is: " + newImperial);
 
+        Date today = new Date();
         dao = new GenericDao(Touristspot.class);
-        //Touristspot newSpot = new Touristspot(nsPlanetID, nsName, nsDesc, nsHandicap, nsImperial, today);
-        //int id = dao.insert(newSpot);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+        Touristspot spotToUpdate = (Touristspot) dao.getById(newPlace);
+        spotToUpdate.setName(newName);
+        spotToUpdate.setDescription(newDesc);
+        spotToUpdate.setHandicapAccess(newHandicap);
+        spotToUpdate.setImperialOnly(newImperial);
+        dao.saveOrUpdate(spotToUpdate);
+        //System.out.println("JKJHH: Trying to pass parm and it is: " + newPlanet);
+        //req.setAttribute("planet1", newPlanet);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/Editspot1.jsp");
         dispatcher.forward(req, resp);
+
     }
 
 }

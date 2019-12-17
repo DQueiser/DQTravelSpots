@@ -1,0 +1,20 @@
+
+N
+squid:S106."9Replace this use of System.out or System.err by a logger.(ìéà
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ôãÇò
+T
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ï»ì—ÿÿÿÿÿ
+O
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ßşÁ
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
+]squid:S3457$"AFormat specifiers should be used instead of string concatenation.(şâİ¯şÿÿÿÿ
+isquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(ä‘‹ø8°Ç‹‰ñ-
+Ssquid:S2629$"7Use the built-in formatting to construct this argument.(şâİ¯şÿÿÿÿ
+O
+squid:S1060"9Replace this use of System.out or System.err by a logger.(ÈøÚâ
+gsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(ğ§Ò²üÿÿÿÿ
+O
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ğöå•
+T
+squid:S106,"9Replace this use of System.out or System.err by a logger.(ŒíğŠüÿÿÿÿ
+Qsquid:S1161 ":Add the "@Override" annotation above this method signature(²ñ‹ì

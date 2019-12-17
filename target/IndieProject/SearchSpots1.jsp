@@ -29,12 +29,16 @@
                     <th>Planet ID</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Handicap Access</th>
+                    <th>Imperial Only</th>
                 </tr>
                 <c:forEach var="tourSpot" items="${tSpots1}">
                     <tr>
                         <td><c:out value="${tourSpot.planetID}" /></td>
                         <td><c:out value="${tourSpot.name}" /></td>
                         <td><c:out value="${tourSpot.description}" /></td>
+                        <td><c:out value="${tourSpot.handicapAccess}" /></td>
+                        <td><c:out value="${tourSpot.imperialOnly}" /></td>
                     </tr>
                 </c:forEach>
             </table

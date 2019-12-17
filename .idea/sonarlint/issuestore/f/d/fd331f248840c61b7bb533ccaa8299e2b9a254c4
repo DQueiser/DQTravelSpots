@@ -1,0 +1,21 @@
+
+Qsquid:S1161 ":Add the "@Override" annotation above this method signature(²ñ‹ì
+Hsquid:S1068"*Remove this unused "logger" private field.(æ×âÁ8òêÃŒñ-
+=squid:S1989C"&Add a "try/catch" block for "forward".(òø½
+[
+squid:S106'"9Replace this use of System.out or System.err by a logger.(â¬õ°ùÿÿÿÿ8®ñ-
+[
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ØòÉØúÿÿÿÿ8ƒşÑŒñ-
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(êØµ‰ûÿÿÿÿ8ÿáñ-
+Esquid:S1989""'Add a "try/catch" block for "parseInt".(ö“Ñê8¾Õ‹ñ-
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
+Vsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8¼ÄŒñ-
+V
+squid:S1063"9Replace this use of System.out or System.err by a logger.(çÚ¡”8á‘ñ-
+V
+squid:S106)"9Replace this use of System.out or System.err by a logger.(„Úóİ8ƒşÑŒñ-
+=squid:S1989C"&Add a "try/catch" block for "forward".(òø½
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(ÂÄ÷úÿÿÿÿ8§§‘ñ-
+nsquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ûÉ¤ˆùÿÿÿÿ8¸æÆŒñ-

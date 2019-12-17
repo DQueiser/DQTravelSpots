@@ -29,6 +29,8 @@
                     <th>Planet ID</th>
                     <th>Name</th>
                     <th>Description</th>
+                    <th>Handicap Access</th>
+                    <th>Imperial Only</th>
                 </tr>
                 <c:forEach var="tourSpot" items="${tSpots1}">
                     <tr>
@@ -37,6 +39,8 @@
                         <!--<td><c:out value="${tourSpot.name}" /></td>-->
                         <td><a href="/IndieProject_war/EditSpotDetail.jsp?place=<c:out value='${tourSpot.getId()}'/>"><c:out value="${tourSpot.getName()}" /></a></td>
                         <td><c:out value="${tourSpot.description}" /></td>
+                        <td><c:out value="${tourSpot.handicapAccess}" /></td>
+                        <td><c:out value="${tourSpot.imperialOnly}" /></td>
                     </tr>
                 </c:forEach>
             </table
