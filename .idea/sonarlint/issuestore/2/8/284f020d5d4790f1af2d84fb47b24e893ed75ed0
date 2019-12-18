@@ -1,14 +1,14 @@
 
-Xsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8¼¶˜Šñ-
-Bsquid:S1989"&Add a "try/catch" block for "forward".(òø½8¼¶˜Šñ-
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ã†ãâûÿÿÿÿ8¼¶˜Šñ-
-ysquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ8¼¶˜Šñ-
-bsquid:S3457"AFormat specifiers should be used instead of string concatenation.(¿ÑŞ©ûÿÿÿÿ8¼¶˜Šñ-
-Wsquid:S1854"6Remove this useless assignment to local variable "id".(¥öüùøÿÿÿÿ8¼¶˜Šñ-
-Hsquid:S1481"'Remove this unused "id" local variable.(¥öüùøÿÿÿÿ8¼¶˜Šñ-
-_squid:UselessImportCheck"6Remove this unused import 'dqtravelspots.entity.User'.(ØÀìù8¼¶˜Šñ-
-Vsquid:S1161":Add the "@Override" annotation above this method signature(²ñ‹ì8¼¶˜Šñ-
-Bsquid:S1989"&Add a "try/catch" block for "forward".(òø½8¼¶˜Šñ-
-Xsquid:S2629"7Use the built-in formatting to construct this argument.(¿ÑŞ©ûÿÿÿÿ8¼¶˜Šñ-
-\squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8¼¶˜Šñ-
+Ysquid:S1854A"6Remove this useless assignment to local variable "id".(¥öüùøÿÿÿÿ8¼¶˜Šñ-
+Xsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì8¼¶˜Šñ-
+Zsquid:S2629;"7Use the built-in formatting to construct this argument.(¿ÑŞ©ûÿÿÿÿ8¼¶˜Šñ-
+dsquid:S3457;"AFormat specifiers should be used instead of string concatenation.(¿ÑŞ©ûÿÿÿÿ8¼¶˜Šñ-
+^squid:UselessImportCheck".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8¼¶˜Šñ-
+Jsquid:S1481A"'Remove this unused "id" local variable.(¥öüùøÿÿÿÿ8¼¶˜Šñ-
+Dsquid:S1989C"&Add a "try/catch" block for "forward".(òø½8¼¶˜Šñ-
+Dsquid:S1989C"&Add a "try/catch" block for "forward".(òø½8¼¶˜Šñ-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8¼¶˜Šñ-
+[
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ã†ãâûÿÿÿÿ8¼¶˜Šñ-
+{squid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ8¼¶˜Šñ-
+asquid:UselessImportCheck"6Remove this unused import 'dqtravelspots.entity.User'.(ØÀìù8¼¶˜Šñ-

@@ -1,0 +1,18 @@
+
+[
+squid:S106+"9Replace this use of System.out or System.err by a logger.(áÀÛ÷üÿÿÿÿ8ïÂŸ´ñ-
+Dsquid:S1989/"&Add a "try/catch" block for "forward".(òø½8×²´ñ-
+Dsquid:S1989/"&Add a "try/catch" block for "forward".(òø½8×²´ñ-
+nsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(²™¦åùÿÿÿÿ8…µ´ñ-
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(· Ú‘ûÿÿÿÿ
+Jsquid:S1989""'Add a "try/catch" block for "parseInt".(”çµÜùÿÿÿÿ8˜¤Œ´ñ-
+nsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(œ×ı×üÿÿÿÿ8˜·´ñ-
+[
+squid:S106'"9Replace this use of System.out or System.err by a logger.(‘Í¦©üÿÿÿÿ8…µ´ñ-
+Asquid:S1068"*Remove this unused "logger" private field.(æ×âÁ
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ø´‰Åøÿÿÿÿ
+Qsquid:S1161 ":Add the "@Override" annotation above this method signature(²ñ‹ì
+[
+squid:S106#"9Replace this use of System.out or System.err by a logger.(ÛŸôùÿÿÿÿ8çõ´ñ-
+[
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ı€…Óøÿÿÿÿ8·Øœ´ñ-

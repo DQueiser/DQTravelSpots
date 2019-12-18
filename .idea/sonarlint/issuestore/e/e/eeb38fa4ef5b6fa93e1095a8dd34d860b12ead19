@@ -1,0 +1,9 @@
+
+Ysquid:S18541"6Remove this useless assignment to local variable "id".(­…„ûÿÿÿÿ8ÃÀ ²ñ-
+Qsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì
+Jsquid:S14811"'Remove this unused "id" local variable.(­…„ûÿÿÿÿ8ÃÀ ²ñ-
+Hsquid:S1068"*Remove this unused "logger" private field.(æ×âÁ8‘“Ò°ñ-
+tsquid:S2226 "XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ø´‰Åøÿÿÿÿ
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(÷Œ„øÿÿÿÿ
+hsquid:UselessImportCheck"=Remove this unused import 'dqtravelspots.entity.Touristspot'.(±œÓø8Œ‘Í²ñ-
+{squid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¬Ç§°úÿÿÿÿ8–å—±ñ-

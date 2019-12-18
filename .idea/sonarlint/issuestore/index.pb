@@ -117,3 +117,19 @@ h
 8src/main/java/dqtravelspots/controller/searchSpots1.java,6\1\6109017710882330333b3e3673761abba8e2df02
 m
 =src/main/java/dqtravelspots/controller/UpdateSpotDetails.java,f\d\fd331f248840c61b7bb533ccaa8299e2b9a254c4
+`
+0src/main/java/dqtravelspots/entity/Favorite.java,f\a\fabfc9472e2abb042b358057e5c323e09bf512a2
+R
+"src/main/webapp/SearchSpotsAdd.jsp,0\3\03231fd7d3c317d86fbed3d69ff4b5885601a6e6
+O
+src/main/webapp/FaveReview1.jsp,4\c\4cefa8f6b259d36558846888048b48dbb11a5401
+h
+8src/main/java/dqtravelspots/controller/searchFaves1.java,c\9\c9131a0a1f616648471747980e224b639a6d2ce0
+k
+;src/main/java/dqtravelspots/controller/searchSpotsAdd1.java,e\e\eeb38fa4ef5b6fa93e1095a8dd34d860b12ead19
+h
+8src/main/java/dqtravelspots/controller/searchUsers1.java,0\c\0c8313c9420628b8b49b573bbe2922bf6d94f08a
+h
+8src/main/java/dqtravelspots/controller/deleteUsers1.java,d\1\d1fa2b1bae09f6e0ea6c5ab133ff05b48594bb4b
+M
+src/main/webapp/EditUser1.jsp,e\a\eae75caf20ceeb9db38abfd78c988718f3686d26

@@ -10,6 +10,7 @@
 
 <body style="background-color: oldlace">
 <jsp:include page="/searchFaves1"/>
+<jsp:include page="/popuPlanet1"/>
 <h1 style="text-align:center; color: darkgreen">Places on that Planet</h1>
 <TABLE style="margin-left: auto;margin-right: auto">
     <TR><TD><br></TD></TR>
@@ -43,7 +44,7 @@
             </table
         </c:when>
         <c:otherwise>
-            <p class="validations">You have not Favorites</p>
+            <p class="validations">You have no Favorites</p>
         </c:otherwise>
     </c:choose>
 </div>

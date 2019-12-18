@@ -1,22 +1,22 @@
 
-[
-squid:S106'"9Replace this use of System.out or System.err by a logger.(â¬õ°ùÿÿÿÿ8ñêÌ›ñ-
-Msquid:S1481?"*Remove this unused "today" local variable.(±­Ñ¶úÿÿÿÿ8ïÏ›ñ-
-[
-squid:S106="9Replace this use of System.out or System.err by a logger.(ÂÄ÷úÿÿÿÿ8ñêÌ›ñ-
 Hsquid:S1068"*Remove this unused "logger" private field.(æ×âÁ8ñêÌ›ñ-
-[
-squid:S106("9Replace this use of System.out or System.err by a logger.(êØµ‰ûÿÿÿÿ8ñêÌ›ñ-
+nsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ÑÉıÿÿÿÿ8ı®§œñ-
 {squid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ8ñêÌ›ñ-
-\squid:S1854?"9Remove this useless assignment to local variable "today".(±­Ñ¶úÿÿÿÿ8ïÏ›ñ-
 V
 squid:S1063"9Replace this use of System.out or System.err by a logger.(çÚ¡”8ñêÌ›ñ-
-Esquid:S1989""'Add a "try/catch" block for "parseInt".(ö“Ñê8ñêÌ›ñ-
-nsquid:CommentedOutCodeLineG"<This block of commented-out lines of code should be removed.(ÑÉıÿÿÿÿ8ı®§œñ-
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(ÂÄ÷úÿÿÿÿ8ñêÌ›ñ-
 Xsquid:S1161 ":Add the "@Override" annotation above this method signature(²ñ‹ì8ñêÌ›ñ-
+Msquid:S1481?"*Remove this unused "today" local variable.(±­Ñ¶úÿÿÿÿ8ïÏ›ñ-
+Esquid:S1989""'Add a "try/catch" block for "parseInt".(ö“Ñê8ñêÌ›ñ-
+[
+squid:S106'"9Replace this use of System.out or System.err by a logger.(â¬õ°ùÿÿÿÿ8ñêÌ›ñ-
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(êØµ‰ûÿÿÿÿ8ñêÌ›ñ-
 V
 squid:S106)"9Replace this use of System.out or System.err by a logger.(„Úóİ8ñêÌ›ñ-
 Dsquid:S1989J"&Add a "try/catch" block for "forward".(òø½8ŒÀİ›ñ-
+\squid:S1854?"9Remove this useless assignment to local variable "today".(±­Ñ¶úÿÿÿÿ8ïÏ›ñ-
 [
 squid:S106*"9Replace this use of System.out or System.err by a logger.(ØòÉØúÿÿÿÿ8ñêÌ›ñ-
 Dsquid:S1989J"&Add a "try/catch" block for "forward".(òø½8ŒÀİ›ñ-

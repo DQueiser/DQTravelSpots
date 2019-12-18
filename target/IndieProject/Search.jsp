@@ -16,10 +16,10 @@
         <TD style="margin-left: auto;margin-right: auto"><a href="/IndieProject_war/index.jsp" class="btn btn-default">Back to Home screen</a></TD>
     </TR>
 </TABLE>
-<FORM ACTION="/IndieProject_war/SearchSpots1.jsp" METHOD="get" style="text-align: center; color: darkgreen">
+<FORM name="searchSelect" ACTION="/IndieProject_war/SearchSpots1.jsp" METHOD="get" style="text-align: center; color: darkgreen">
     <br><br>
     <label style="color: darkgreen">What Planet are we going to?</label>
-    <select name="planet1" style="text-align:center">
+    <select name="planet1" style="text-align:center" onchange="searchSelect.submit()">
         <c:forEach var="mapEntry" items="${planetMap}">
             <option value="<c:out value='${mapEntry.key}'/>"><c:out value="${mapEntry.value}"/></option>
         </c:forEach>

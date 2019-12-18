@@ -1,0 +1,37 @@
+
+Jsquid:S1989:"'Add a "try/catch" block for "parseInt".(¤ò×Ğøÿÿÿÿ8€‰³ñ-
+[
+squid:S1065"9Replace this use of System.out or System.err by a logger.(®—ıøÿÿÿÿ8ÑÃ¢³ñ-
+V
+squid:S106;"9Replace this use of System.out or System.err by a logger.(ÿ¬éç8Ã»¤³ñ-
+Hsquid:S1068"*Remove this unused "logger" private field.(æ×âÁ8œõï²ñ-
+hsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(°Î«a8²©³ñ-
+nsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ù˜ô‹şÿÿÿÿ8œõï²ñ-
+isquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ñ´¥³8œõï²ñ-
+[
+squid:S106*"9Replace this use of System.out or System.err by a logger.(äê¡üúÿÿÿÿ8Ÿí›³ñ-
+[
+squid:S106="9Replace this use of System.out or System.err by a logger.(èÂ—Šûÿÿÿÿ8Üé¥³ñ-
+dsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‹Ê¨F
+wsquid:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡Õ…8úÑ³ñ-
+^squid:S18546";Remove this useless assignment to local variable "tmpSpot".(Éøöûüÿÿÿÿ8÷Ò’³ñ-
+Qsquid:S1161"":Add the "@Override" annotation above this method signature(²ñ‹ì
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(‚Õğ8¸ã™³ñ-
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(âî‘íşÿÿÿÿ8šËœ³ñ-
+isquid:CommentedOutCodeLineA"<This block of commented-out lines of code should be removed.(â—„´8œõï²ñ-
+V
+squid:S106&"9Replace this use of System.out or System.err by a logger.(€Ï°“8İı™³ñ-
+V
+squid:S106."9Replace this use of System.out or System.err by a logger.(ƒ–è÷8«ç³ñ-
+vsquid:S2226 "XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(˜™ú÷8ØÄù²ñ-
+V
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ñ­ù¡8Š  ³ñ-
+[
+squid:S106("9Replace this use of System.out or System.err by a logger.(÷¯¤úÿÿÿÿ8«˜›³ñ-
+V
+squid:S1063"9Replace this use of System.out or System.err by a logger.(­ûùõ8è¶¡³ñ-
+[
+squid:S1068"9Replace this use of System.out or System.err by a logger.(¨¡áşÿÿÿÿ8Ù›£³ñ-
+tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ø´‰Åøÿÿÿÿ

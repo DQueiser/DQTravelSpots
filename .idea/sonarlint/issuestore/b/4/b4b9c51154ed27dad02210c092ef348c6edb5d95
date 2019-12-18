@@ -1,15 +1,15 @@
 
-gsquid:UselessImportCheck
-"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼8ú·ªˆñ-
-hsquid:UselessImportCheck"8Remove this unused import 'org.testng.annotations.Test'.(á½úáùÿÿÿÿ8¤ÑÙÔğ-
-hsquid:UselessImportCheck"8Remove this unused import 'dqtravelspots.entity.Planet'.(ıÆ¨ùùÿÿÿÿ8¤ÑÙÔğ-
-Qsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì
+tsquid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
 |squid:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËĞÓ‡ûÿÿÿÿ8ç°ÑÖğ-
+hsquid:UselessImportCheck"8Remove this unused import 'dqtravelspots.entity.Planet'.(ıÆ¨ùùÿÿÿÿ8¤ÑÙÔğ-
+hsquid:UselessImportCheck"8Remove this unused import 'org.testng.annotations.Test'.(á½úáùÿÿÿÿ8¤ÑÙÔğ-
 Jsquid:S1481&",Remove this unused "isValid" local variable.(à£¿¬8ÎÓÅ‡ñ-
 qsquid:UselessImportCheck"ARemove this unused import 'dqtravelspots.service.PlanetsService'.(ø©õÏúÿÿÿÿ8¤ÑÙÔğ-
-O
-squid:S106@"9Replace this use of System.out or System.err by a logger.(½¨ì
 V
 squid:S106)"9Replace this use of System.out or System.err by a logger.(‡§ğÅ8ÏˆÊÖğ-
-tsquid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎ’ûÿÿÿÿ
 lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§È‹÷8õÑ¼‡ñ-
+Qsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì
+gsquid:UselessImportCheck
+"<Remove this unused import 'javax.servlet.RequestDispatcher'.(Ëöò¼8ú·ªˆñ-
+O
+squid:S106@"9Replace this use of System.out or System.err by a logger.(½¨ì

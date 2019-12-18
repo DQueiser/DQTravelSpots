@@ -1,0 +1,13 @@
+
+Qsquid:S1161#":Add the "@Override" annotation above this method signature(²ñ‹ì
+[squid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8×©Û³ñ-
+Asquid:S1068"*Remove this unused "logger" private field.(æ×âÁ
+tsquid:S2226!"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(Ø´‰Åøÿÿÿÿ
+esquid:UselessImportCheck":Remove this unused import 'dqtravelspots.entity.Favorite'.(â˜øŒ8×©Û³ñ-
+O
+squid:S106'"9Replace this use of System.out or System.err by a logger.(ãâ½š
+O
+squid:S106%"9Replace this use of System.out or System.err by a logger.(¦°œª
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‚éªšúÿÿÿÿ
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ8×©Û³ñ-
+hsquid:UselessImportCheck"=Remove this unused import 'dqtravelspots.entity.Touristspot'.(±œÓø8ÐðÛ³ñ-
