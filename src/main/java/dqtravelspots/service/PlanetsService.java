@@ -28,6 +28,9 @@ public class PlanetsService {
     //public List<Planet> getPlanetInfo() throws JsonProcessingException {
     public Planet getPlanetInfo() throws JsonProcessingException {
 
+        //This module is also sadly not being used; I am going to leave my
+        //SYstem.out.prinln stmts in only in case I need to demo one last time.
+
         System.out.println("DQTest3B: In the method");
 
         Client client = ClientBuilder.newClient();

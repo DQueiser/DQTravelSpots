@@ -38,10 +38,12 @@ public class Search1 extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        //This module is no longer used, other than a test bed
+        //To that end, I am leaving the System.out.printlns in, in case I need to demo this.
+
         Boolean isValid = true;
 
         logger.info("DQTEST3: I'm going to do a search");
-        System.out.println("DQTEST3:I'm going to do a search");
 
         try {
             testAPIConn();
@@ -49,19 +51,6 @@ public class Search1 extends HttpServlet {
             e.printStackTrace();
         }
 
-        //String firstName = req.getParameter("nu_firstname");
-        //String lastName = req.getParameter("nu_lastname");
-        //String userName = req.getParameter("nu_username");
-        //String emailAddress = req.getParameter("nu_email");
-        //String passwordOne = req.getParameter("nu_pass1");
-        //String passwordTwo = req.getParameter("nu_pass2");
-
-        //System.out.println("First Name = " + firstName);
-        //System.out.println("Last Name = " + lastName);
-        //System.out.println("User Name = " + userName);
-        //System.out.println("Email = " + emailAddress);
-        //System.out.println("Password 1 = " + passwordOne);
-        //System.out.println("Password 2 = " + passwordTwo);
 
         if (isValid ==  true) {
             //Date today = new Date();
@@ -86,16 +75,6 @@ public class Search1 extends HttpServlet {
         Planet thisPlanet = newService.getPlanetInfo();
         System.out.println("DQTest3: Planet returned is " + thisPlanet.getName());
 
-
-
-        //System.out.println("DQTest3: Getting a planet");
-        //Client client = ClientBuilder.newClient();
-        //WebTarget target =
-                //client.target("https://swapi.co/api/planets/1");
-        //String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        //ObjectMapper mapper = new ObjectMapper();
-        //Planet planet = mapper.readValue(response, Planet.class);
-        //System.out.println("DQTest3: Planet returned is " + planet.getName());
     }
 
 }

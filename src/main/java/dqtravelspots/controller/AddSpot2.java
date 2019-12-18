@@ -57,7 +57,6 @@ public class AddSpot2 extends HttpServlet {
         }
 
         logger.info("DQTEST8: Planet selected was: " + nsPlanetID);
-        System.out.println("DQTEST8: Planet selected was: " + nsPlanetID);
 
         Date today = new Date();
         dao = new GenericDao(Touristspot.class);

@@ -36,10 +36,6 @@ public class UpdateSpotDetails extends HttpServlet {
         String newName = req.getParameter("ns_name");
         String newDesc =  req.getParameter("ns_description");
 
-        System.out.println("JKJ: The PLace ID is: " + newPlace);
-        System.out.println("JKJ: The planet ID is: " + newPlanet);
-        System.out.println("JKJ: The new Name is: " + newName);
-        System.out.println("JKJ: The new Desc is: " + newDesc);
         String tmpHandicap = String.valueOf(req.getParameter("ns_handicap"));
         String handicapTrue = "HY";
         String newHandicap = "";
@@ -48,7 +44,6 @@ public class UpdateSpotDetails extends HttpServlet {
         } else {
             newHandicap = "False";
         }
-        System.out.println("JKJ: The new Handicap is: " + newHandicap);
 
         String tmpImperial = String.valueOf(req.getParameter("ns_imperial"));
         String imperialTrue = "IY";
@@ -58,7 +53,6 @@ public class UpdateSpotDetails extends HttpServlet {
         } else {
             newImperial = "False";
         }
-        System.out.println("JKJ: The new Imperial is: " + newImperial);
 
         Date today = new Date();
         dao = new GenericDao(Touristspot.class);
@@ -68,8 +62,7 @@ public class UpdateSpotDetails extends HttpServlet {
         spotToUpdate.setHandicapAccess(newHandicap);
         spotToUpdate.setImperialOnly(newImperial);
         dao.saveOrUpdate(spotToUpdate);
-        //System.out.println("JKJHH: Trying to pass parm and it is: " + newPlanet);
-        //req.setAttribute("planet1", newPlanet);
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/Editspot1.jsp");
         dispatcher.forward(req, resp);
 

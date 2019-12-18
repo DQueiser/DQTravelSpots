@@ -40,7 +40,6 @@ public class AddNewUser extends HttpServlet {
         Boolean isValid = true;
 
         logger.info("DQTEST2: Prepping to add a new user");
-        System.out.println("DQTEST2:Prepping to add a new user");
 
         String firstName = req.getParameter("nu_firstname");
         String lastName = req.getParameter("nu_lastname");

@@ -33,17 +33,12 @@ public class GetSpotDetails extends HttpServlet {
         int placeID = Integer.parseInt(req.getParameter("place"));
 
         logger.info("DQTESTY: Place selected was: " + placeID);
-        System.out.println("DQTESTY: Place selected was: " + placeID);
 
-        System.out.println("DQTESTY: creating the DAO");
         dao = new GenericDao(Touristspot.class);
-        //List<Touristspot> tSpots = dao.findByPropertyEqualQ("planetID", nsPlanetID);
-        System.out.println("DQTESTY: submitting a query");
+
         Touristspot oneSpot = (Touristspot) dao.getById(placeID);
-        System.out.println("DQTESTY: got some results");
+
         req.setAttribute("oneSpot", oneSpot);
-        //req.setAttribute("placeID", placeID);
-        System.out.println("DQTESTY: attribute added");
     }
 
 }

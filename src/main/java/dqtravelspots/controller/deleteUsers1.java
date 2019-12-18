@@ -32,17 +32,10 @@ public class deleteUsers1 extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         int userID = Integer.parseInt(req.getParameter("user"));
-        System.out.println("DQTest07: User IDis : " + userID);
 
-        System.out.println("DQTest07: Creating the userDao");
         userDao = new GenericDao(User.class);
-        System.out.println("DQTest07: Whacking the User");
-        //List<User> userList = userDao.getAll();
         userDao.delete(userDao.getById(userID));
 
-        System.out.println("DQTest07: I'm sorry, Jim. He's gone.");
-
-        //req.setAttribute("userList1", userList);
         RequestDispatcher dispatcher = req.getRequestDispatcher("/EditUser1.jsp");
         dispatcher.forward(req, resp);
     }

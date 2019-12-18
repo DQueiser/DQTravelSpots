@@ -34,9 +34,7 @@ public class searchUsers1 extends HttpServlet {
 
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        System.out.println("DQTest69: Creating the userDao");
         userDao = new GenericDao(User.class);
-        System.out.println("DQTest69: Getting user list");
         List<User> userList = userDao.getAll();
 
         req.setAttribute("userList1", userList);

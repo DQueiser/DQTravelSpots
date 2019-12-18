@@ -38,7 +38,6 @@ public class popuPlanet1 extends HttpServlet {
         Boolean isValid = true;
 
         logger.info("DQTEST7: I'm going to fill up my map");
-        System.out.println("DQTEST7:I'm going to fill up my map");
         planetMap.put("1","Tatooine");
         planetMap.put("2","Alderaan");
         planetMap.put("3","Yavin IV");
@@ -58,10 +57,6 @@ public class popuPlanet1 extends HttpServlet {
         planetMap.put("17","Jedha");
         planetMap.put("18","Eadu");
         planetMap.put("19","Scarif");
-
-
-        logger.info("DQTEST7: OK, now I'm going to add a spot");
-        System.out.println("DQTEST7: OK, now I'm going to add a spot");
 
         req.setAttribute("planetMap", planetMap);
     }
