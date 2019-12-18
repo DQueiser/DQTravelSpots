@@ -58,6 +58,26 @@ Application context = /IndieProject_war
   CREATE INDEX usertrips_user_id_fk
     ON usertrips (user_id);
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+ CREATE TABLE favorites
+  (
+    id        INT AUTO_INCREMENT
+      PRIMARY KEY,
+    user_id   INT         NOT NULL,
+    spot_id VARCHAR(20) NOT NULL,
+    date_registered datetime NOT NULL,
+    CONSTRAINT favorites_id_uindex
+    UNIQUE (id),
+    FOREIGN KEY (user_id) REFERENCES user (id)
+      ON UPDATE CASCADE
+      ON DELETE CASCADE
+  )
+    ENGINE = InnoDB;
+
+  CREATE INDEX favorites_user_id_fk
+    ON usertrips (user_id);
+~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
  CREATE TABLE pointofinterest
   (
     id        INT AUTO_INCREMENT

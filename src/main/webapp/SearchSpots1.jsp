@@ -31,6 +31,7 @@
                     <th>Description</th>
                     <th>Handicap Access</th>
                     <th>Imperial Only</th>
+                    <th>Add as Favorite</th>
                 </tr>
                 <c:forEach var="tourSpot" items="${tSpots1}">
                     <tr>
@@ -39,6 +40,7 @@
                         <td><c:out value="${tourSpot.description}" /></td>
                         <td><c:out value="${tourSpot.handicapAccess}" /></td>
                         <td><c:out value="${tourSpot.imperialOnly}" /></td>
+                        <td><a href="/IndieProject_war/SearchSpotsAdd.jsp?place=<c:out value='${tourSpot.getId()}'/>">Add Favorite</a></td>
                     </tr>
                 </c:forEach>
             </table

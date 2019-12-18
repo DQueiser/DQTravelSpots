@@ -1123,192 +1123,186 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="283" parent="3" name="pointofinterest">
+    <table id="283" parent="3" name="favorites"/>
+    <table id="284" parent="3" name="pointofinterest">
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <table id="284" parent="3" name="role"/>
-    <table id="285" parent="3" name="touristspot"/>
-    <table id="286" parent="3" name="user">
+    <table id="285" parent="3" name="role"/>
+    <table id="286" parent="3" name="touristspot"/>
+    <table id="287" parent="3" name="user">
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <table id="287" parent="3" name="usertrips">
+    <table id="288" parent="3" name="usertrips">
       <Collation>latin1_swedish_ci</Collation>
     </table>
-    <column id="288" parent="283" name="id">
+    <column id="289" parent="283" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="283" name="usertrips_id">
+    <column id="290" parent="283" name="user_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="283" name="citylocationcode">
+    <column id="291" parent="283" name="spot_id">
       <Position>3</Position>
-      <DataType>varchar(70)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="283" name="title">
+    <column id="292" parent="283" name="date_registered">
       <Position>4</Position>
-      <DataType>varchar(40)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="292" parent="283" name="description">
-      <Position>5</Position>
-      <DataType>varchar(70)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="293" parent="283" name="comment">
-      <Position>6</Position>
-      <DataType>varchar(70)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="294" parent="283" name="url">
-      <Position>7</Position>
-      <DataType>varchar(200)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="295" parent="283" name="date_registered">
-      <Position>8</Position>
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="296" parent="283" name="pointofinterest_id_uindex">
+    <index id="293" parent="283" name="favorites_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="297" parent="283" name="pointofinterest_usertrips_id_fk">
-      <ColNames>usertrips_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="298" parent="283" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <key id="299" parent="283" name="pointofinterest_id_uindex">
-      <ColNames>id</ColNames>
-      <UnderlyingIndexName>pointofinterest_id_uindex</UnderlyingIndexName>
-    </key>
-    <foreign-key id="300" parent="283" name="pointofinterest_usertrips_id_fk">
-      <ColNames>usertrips_id</ColNames>
-      <RefTableName>usertrips</RefTableName>
-      <RefColNames>id</RefColNames>
-      <OnUpdate>cascade</OnUpdate>
-      <OnDelete>cascade</OnDelete>
-    </foreign-key>
-    <column id="301" parent="284" name="id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="302" parent="284" name="role_name">
-      <Position>2</Position>
-      <DataType>varchar(25)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="303" parent="284" name="user_name">
-      <Position>3</Position>
-      <DataType>varchar(15)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="304" parent="284" name="user_id">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="305" parent="284" name="role_id_uindex">
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Type>btree</Type>
-    </index>
-    <index id="306" parent="284" name="role_user_user_id_fk">
+    <index id="294" parent="283" name="user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="307" parent="284" name="PRIMARY">
+    <key id="295" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="308" parent="284" name="role_id_uindex">
+    <key id="296" parent="283" name="favorites_id_uindex">
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>role_id_uindex</UnderlyingIndexName>
+      <UnderlyingIndexName>favorites_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="309" parent="284" name="role_user_user_id_fk">
+    <foreign-key id="297" parent="283" name="favorites_ibfk_1">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>
       <OnUpdate>cascade</OnUpdate>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
-    <column id="310" parent="285" name="id">
+    <column id="298" parent="284" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="285" name="planet_id">
+    <column id="299" parent="284" name="usertrips_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="284" name="citylocationcode">
+      <Position>3</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="284" name="title">
+      <Position>4</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="284" name="description">
+      <Position>5</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="303" parent="284" name="comment">
+      <Position>6</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="304" parent="284" name="url">
+      <Position>7</Position>
+      <DataType>varchar(200)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="305" parent="284" name="date_registered">
+      <Position>8</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="306" parent="284" name="pointofinterest_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="307" parent="284" name="pointofinterest_usertrips_id_fk">
+      <ColNames>usertrips_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="308" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="309" parent="284" name="pointofinterest_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>pointofinterest_id_uindex</UnderlyingIndexName>
+    </key>
+    <foreign-key id="310" parent="284" name="pointofinterest_usertrips_id_fk">
+      <ColNames>usertrips_id</ColNames>
+      <RefTableName>usertrips</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="311" parent="285" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="312" parent="285" name="role_name">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="312" parent="285" name="name">
+    <column id="313" parent="285" name="user_name">
       <Position>3</Position>
-      <DataType>varchar(150)|0s</DataType>
+      <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="285" name="description">
+    <column id="314" parent="285" name="user_id">
       <Position>4</Position>
-      <DataType>varchar(500)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="285" name="handicap">
-      <Position>5</Position>
-      <DataType>varchar(25)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="315" parent="285" name="imperial">
-      <Position>6</Position>
-      <DataType>varchar(25)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="316" parent="285" name="date_registered">
-      <Position>7</Position>
-      <DataType>datetime|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="317" parent="285" name="touristspot_id_uindex">
+    <index id="315" parent="285" name="role_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="318" parent="285" name="PRIMARY">
+    <index id="316" parent="285" name="role_user_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="317" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="319" parent="285" name="touristspot_id_uindex">
+    <key id="318" parent="285" name="role_id_uindex">
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>touristspot_id_uindex</UnderlyingIndexName>
+      <UnderlyingIndexName>role_id_uindex</UnderlyingIndexName>
     </key>
+    <foreign-key id="319" parent="285" name="role_user_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <RefTableName>user</RefTableName>
+      <RefColNames>id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
     <column id="320" parent="286" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
@@ -1316,31 +1310,31 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="321" parent="286" name="first_name">
+    <column id="321" parent="286" name="planet_id">
       <Position>2</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="322" parent="286" name="last_name">
+    <column id="322" parent="286" name="name">
       <Position>3</Position>
-      <DataType>varchar(25)|0s</DataType>
+      <DataType>varchar(150)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="323" parent="286" name="email">
+    <column id="323" parent="286" name="description">
       <Position>4</Position>
-      <DataType>varchar(25)|0s</DataType>
+      <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="324" parent="286" name="user_name">
+    <column id="324" parent="286" name="handicap">
       <Position>5</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="325" parent="286" name="password">
+    <column id="325" parent="286" name="imperial">
       <Position>6</Position>
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1352,7 +1346,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="327" parent="286" name="user_id_uindex">
+    <index id="327" parent="286" name="touristspot_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
@@ -1362,9 +1356,9 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="329" parent="286" name="user_id_uindex">
+    <key id="329" parent="286" name="touristspot_id_uindex">
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>user_id_uindex</UnderlyingIndexName>
+      <UnderlyingIndexName>touristspot_id_uindex</UnderlyingIndexName>
     </key>
     <column id="330" parent="287" name="id">
       <Position>1</Position>
@@ -1373,30 +1367,34 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="331" parent="287" name="user_id">
+    <column id="331" parent="287" name="first_name">
       <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="332" parent="287" name="citylocationcode">
-      <Position>3</Position>
-      <DataType>varchar(70)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="333" parent="287" name="numofpoints">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="287" name="rating">
-      <Position>5</Position>
+    <column id="332" parent="287" name="last_name">
+      <Position>3</Position>
       <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="287" name="comment">
+    <column id="333" parent="287" name="email">
+      <Position>4</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="334" parent="287" name="user_name">
+      <Position>5</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="287" name="password">
       <Position>6</Position>
-      <DataType>varchar(70)|0s</DataType>
+      <DataType>varchar(25)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="336" parent="287" name="date_registered">
@@ -1405,25 +1403,82 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="337" parent="287" name="usertrips_id_uindex">
+    <index id="337" parent="287" name="user_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="338" parent="287" name="usertrips_user_id_fk">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="339" parent="287" name="PRIMARY">
+    <key id="338" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="340" parent="287" name="usertrips_id_uindex">
+    <key id="339" parent="287" name="user_id_uindex">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>user_id_uindex</UnderlyingIndexName>
+    </key>
+    <column id="340" parent="288" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="341" parent="288" name="user_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="342" parent="288" name="citylocationcode">
+      <Position>3</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="343" parent="288" name="numofpoints">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="344" parent="288" name="rating">
+      <Position>5</Position>
+      <DataType>varchar(25)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="345" parent="288" name="comment">
+      <Position>6</Position>
+      <DataType>varchar(70)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="346" parent="288" name="date_registered">
+      <Position>7</Position>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="347" parent="288" name="usertrips_id_uindex">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="348" parent="288" name="favorites_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="349" parent="288" name="usertrips_user_id_fk">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="350" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="351" parent="288" name="usertrips_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>usertrips_id_uindex</UnderlyingIndexName>
     </key>
-    <foreign-key id="341" parent="287" name="usertrips_user_id_fk">
+    <foreign-key id="352" parent="288" name="usertrips_user_id_fk">
       <ColNames>user_id</ColNames>
       <RefTableName>user</RefTableName>
       <RefColNames>id</RefColNames>

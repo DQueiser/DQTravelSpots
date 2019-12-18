@@ -34,7 +34,8 @@ public class User {
     private Date dateRegistered;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Usertrip> Usertrips = new HashSet<>();
+    //private Set<Usertrip> Usertrips = new HashSet<>();
+    private Set<Favorite> favorites = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -178,40 +179,40 @@ public class User {
     }
 
     /**
-     * Gets user trips.
+     * Gets user favorites.
      *
-     * @return the user trips
+     * @return the user's favorites
      */
-    public Set<Usertrip> getUsertrips() {
-        return Usertrips;
+    public Set<Favorite> getFavorites() {
+        return favorites;
     }
 
     /**
-     * Sets user trips.
+     * Sets user favorites.
      *
-     * @param userTrips the user trips
+     * @param userFavorites the user's favorites
      */
-    public void setUsertrips(Set<Usertrip> userTrips) {
-        this.Usertrips = userTrips;
+    public void setFavorites(Set<Favorite> userFavorites) {
+        this.favorites = userFavorites;
     }
 
     /**
-     * Add a user trip.
+     * Add a user favorite.
      *
-     * @param userTrip the trip to add
+     * @param userFavorite the favorite to add
      */
-    public void addTrip(Usertrip userTrip) {
-        Usertrips.add(userTrip);
-        userTrip.setUser(this);
+    public void addFavorite(Favorite userFavorite) {
+        favorites.add(userFavorite);
+        userFavorite.setUser(this);
     }
 
     /**
-     * Remove a user trip.
+     * Remove a user favorite.
      *
-     * @param userTrip the trip to remove
+     * @param userFavorite the favorite to remove
      */
-    public void removeTrip(Usertrip userTrip) {
-        Usertrips.remove(userTrip);
-        userTrip.setUser(null);
+    public void removeFavorite(Favorite userFavorite) {
+        favorites.remove(userFavorite);
+        userFavorite.setUser(null);
     }
 }

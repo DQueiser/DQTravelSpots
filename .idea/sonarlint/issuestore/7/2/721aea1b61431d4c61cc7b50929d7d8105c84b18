@@ -1,18 +1,18 @@
 
-T
-squid:S106&"9Replace this use of System.out or System.err by a logger.(Âæ±³úÿÿÿÿ
-T
-squid:S106)"9Replace this use of System.out or System.err by a logger.(¢°Ó¨þÿÿÿÿ
-O
-squid:S106$"9Replace this use of System.out or System.err by a logger.(Õ¦ƒƒ
-gsquid:CommentedOutCodeLine("<This block of commented-out lines of code should be removed.(ð§Ò²üÿÿÿÿ
-Qsquid:S1161":Add the "@Override" annotation above this method signature(²ñ‹ì
-Nsquid:S2629#"7Use the built-in formatting to construct this argument.(ËÁü¨
-Jsquid:S1989!"'Add a "try/catch" block for "parseInt".(–¡Ø‡ÿÿÿÿÿ8ò¡ÉŠñ-
-T
-squid:S106+"9Replace this use of System.out or System.err by a logger.(ž¬•ùÿÿÿÿ
-T
-squid:S106."9Replace this use of System.out or System.err by a logger.(¼èÿÑûÿÿÿÿ
-Xsquid:S3457#"AFormat specifiers should be used instead of string concatenation.(ËÁü¨
-tsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎž’ûÿÿÿÿ
-nsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(î¶Þ‹øÿÿÿÿ8ë÷Œñ-
+M
+squid:S106"9Replace this use of System.out or System.err by a logger.(Õ¦ƒƒ
+Osquid:S1161":Add the "@Override" annotation above this method signature(²ñ‹ì
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(ž¬•ùÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ð§Ò²üÿÿÿÿ
+Vsquid:S3457"AFormat specifiers should be used instead of string concatenation.(ËÁü¨
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Âæ±³úÿÿÿÿ
+rsquid:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(µÎž’ûÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¢°Ó¨þÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(¼èÿÑûÿÿÿÿ
+Lsquid:S2629"7Use the built-in formatting to construct this argument.(ËÁü¨
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(î¶Þ‹øÿÿÿÿ8ë÷Œñ-
+Hsquid:S1989"'Add a "try/catch" block for "parseInt".(–¡Ø‡ÿÿÿÿÿ8ò¡ÉŠñ-

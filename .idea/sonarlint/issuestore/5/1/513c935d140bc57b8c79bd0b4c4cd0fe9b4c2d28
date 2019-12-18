@@ -1,10 +1,12 @@
 
+m Web:TableHeaderHasIdOrScopeCheck!";Add either an 'id' or a 'scope' attribute to this <th> tag.(Àƒİ08ï°Ûœñ-
 cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
-?	Web:S5256"%Add "<th>" headers to this "<table>".(½Ñì¤üÿÿÿÿ
-l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ß“şæøÿÿÿÿ
 l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ûéú»ÿÿÿÿÿ
-Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
-g Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ô—ªå
-MWeb:TableWithoutCaptionCheck" Add a description to this table.(½Ñì¤üÿÿÿÿ
-MWeb:TableWithoutCaptionCheck" Add a description to this table.(Èƒ€ıÿÿÿÿ
 C	Web:S1827")Remove this deprecated "align" attribute.(Ø¤üÿÿÿÿ
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+MWeb:TableWithoutCaptionCheck" Add a description to this table.(Èƒ€ıÿÿÿÿ
+MWeb:TableWithoutCaptionCheck" Add a description to this table.(½Ñì¤üÿÿÿÿ
+g Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ô—ªå
+?	Web:S5256"%Add "<th>" headers to this "<table>".(½Ñì¤üÿÿÿÿ
+s Web:TableHeaderHasIdOrScopeCheck ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ìãÍ¸úÿÿÿÿ8ï°Ûœñ-
+l Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(ß“şæøÿÿÿÿ
